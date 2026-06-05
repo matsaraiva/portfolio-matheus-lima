@@ -22,13 +22,19 @@ export function getExternalVideoEmbed(src: string) {
     const url = new URL(src);
 
     if (url.hostname.includes("youtube.com")) {
+      const id = url.searchParams.get("v");
       const list = url.searchParams.get("list");
+
+      if (id && list) {
+        return `https://www.youtube.com/embed/${id}?list=${list}`;
+      }
+      if (id) {
+        return `https://www.youtube.com/embed/${id}`;
+      }
       if (list) {
         return `https://www.youtube.com/embed/videoseries?list=${list}`;
       }
-
-      const id = url.searchParams.get("v");
-      return id ? `https://www.youtube.com/embed/${id}` : src;
+      return src;
     }
 
     if (url.hostname === "youtu.be") {

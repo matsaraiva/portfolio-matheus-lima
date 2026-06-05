@@ -14,6 +14,10 @@ const focusAreas = [
 export function HeroSection() {
   return (
     <section className="relative min-h-[88svh] overflow-hidden pt-16 text-white" style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1f2d 40%, #0a2218 70%, #061a12 100%)" }}>
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 pointer-events-none"
+        style={{ backgroundImage: "url('/hero-bg.png')" }} 
+      />
       <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(ellipse at 30% 20%, rgba(16,185,129,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(5,150,105,0.06) 0%, transparent 50%)" }} />
       <div className="absolute inset-0 hero-grid opacity-20" />
 

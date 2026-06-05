@@ -42,7 +42,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
         alt: "Data2073 trailer — cross-chain trading card game",
         caption: "Data2073 official trailer. Cross-chain gameplay with weekly tournaments hosted on N3mus and intraVerse.",
         provider: "youtube",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
         alt: "Data2073 gameplay — cross-chain trading card game on SKALE and Moonbeam",
         caption: "Data2073 gameplay. Wallet-connected matches via Sequence SDK, NFT card ownership, and cross-chain asset flows across SKALE, Moonbeam, and Somnia.",
         provider: "youtube",
@@ -160,7 +160,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=YscTtrmhC30&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=YscTtrmhC30&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=2",
         alt: "Invaders Tower Defense Online — teaser trailer",
         caption: "Official teaser for Invaders Tower Defense Online, shipped on Steam.",
         provider: "youtube",
@@ -233,14 +233,14 @@ export const projects: Project[] = [
     slug: "fly-td",
     title: "Fly TD",
     summary:
-      "Unity/C# tower defense game — gameplay systems, enemy wave logic, and build delivery as part of the Bright Games portfolio.",
+      "Unity/C# tower defense game — gameplay systems, enemy wave logic, and build delivery as part of Matheus's game portfolio.",
     problem:
       "A tower defense game needed clean gameplay architecture: wave management, enemy paths, tower targeting, and balance parameters all had to be maintainable and expandable.",
     solution:
       "Developed Unity/C# gameplay systems covering enemy wave spawning, tower targeting logic, balance tuning via ScriptableObjects, and iterative QA across build cycles.",
     role: "Unity/C# developer working on gameplay systems, wave logic, balance, and QA.",
     tools: ["Unity", "C#", "ScriptableObjects", "Build validation", "QA"],
-    company: "Bright Games",
+    company: "Freelance",
     year: "2024–2025",
     images: [
       {
@@ -254,7 +254,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=lkLzyP8x9qo&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=6",
         alt: "Fly TD — tower defense gameplay demo",
         caption: "Fly TD gameplay demonstration from the portfolio reel.",
         provider: "youtube",
@@ -299,7 +299,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=0ud_aYHRu0w&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=0ud_aYHRu0w&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=3",
         alt: "Bright Shooter — bullet-hell gameplay demo",
         caption: "Bright Shooter gameplay demo from the portfolio reel.",
         provider: "youtube",
@@ -344,7 +344,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=a-db7GFzQi4&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=a-db7GFzQi4&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=5",
         alt: "Toy Soldiers FPS — gameplay teaser",
         caption: "Toy Soldiers FPS gameplay teaser from the portfolio reel.",
         provider: "youtube",
@@ -389,7 +389,7 @@ export const projects: Project[] = [
     videos: [
       {
         type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
+        src: "https://www.youtube.com/watch?v=Ree1qJVGJp0&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=4",
         alt: "Bright Runner — endless runner gameplay demo",
         caption: "Bright Runner gameplay demo from the portfolio reel.",
         provider: "youtube",
