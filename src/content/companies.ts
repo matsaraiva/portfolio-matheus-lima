@@ -4,7 +4,25 @@ export const companies: CompanySlot[] = [
   {
     name: "Data2073",
     relationship: "Featured product work",
-    note: "Shipped Unity game ecosystem and the primary case study in this portfolio. Backend APIs, multiplayer architecture, LiveOps, and Web3 integration across the full stack.",
+    note: "Shipped Unity game on Epic Games Store — cross-chain trading card game with weekly tournaments. Backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
+    status: "public",
+  },
+  {
+    name: "N3mus",
+    relationship: "Tournament platform partner",
+    note: "N3mus Foundation hosts weekly Data2073 tournaments. Their platform connects the competitive layer of the game to on-chain rewards and player rankings.",
+    status: "public",
+  },
+  {
+    name: "intraVerse",
+    relationship: "Distribution partner",
+    note: "intraVerse provides a cross-game social and distribution layer for Data2073, connecting the game to a broader Web3 gaming ecosystem.",
+    status: "public",
+  },
+  {
+    name: "Immutable",
+    relationship: "Blockchain infrastructure",
+    note: "Immutable X (Ethereum L2) is the blockchain layer powering Data2073 — NFT card ownership, wallet authentication, and on-chain asset transfers all run on Immutable.",
     status: "public",
   },
   {
