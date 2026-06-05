@@ -42,9 +42,9 @@ export const data2073Outcomes = [
   },
   {
     label: "Web3 integration",
-    value: "Wallet / NFT / DataChip",
+    value: "Wallet / NFT / On-chain assets",
     detail:
-      "Wallet reads, NFT ownership validation, reward and bridge flows, smart-contract-aware approval paths, and Unity UI states that stay coherent across chain interactions.",
+      "Wallet reads, NFT ownership validation, blockchain-to-game asset transfer flows, smart-contract-aware approval paths, and Unity UI states that stay coherent across chain interactions.",
   },
   {
     label: "Delivery quality",

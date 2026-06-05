@@ -45,7 +45,7 @@ export const profile = {
     summary:
       "A production Unity game ecosystem: backend API integration, multiplayer infrastructure, LiveOps workflows, Web3/NFT flows, and system architecture across client and server boundaries.",
     description:
-      "Data2073 is the deepest case study in this portfolio. The work spanned C# Unity systems, server-authoritative multiplayer, UGS matchmaking and economy, backend REST integrations, Web3/NFT wallet validation, DataChip bridge flows, LiveOps tooling, QA, and performance optimization — across client, backend, and blockchain layers of a shipped product.",
+      "Data2073 is the deepest case study in this portfolio. The work spanned C# Unity systems, server-authoritative multiplayer, UGS matchmaking and economy, backend REST integrations, Web3/NFT wallet validation, blockchain-to-game asset transfer flows, LiveOps tooling, QA, and performance optimization — across client, backend, and blockchain layers of a shipped product.",
     sourceHref: "https://www.immutable.com/play/data2073",
   },
 };

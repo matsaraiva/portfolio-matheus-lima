@@ -112,9 +112,9 @@ export const data2073Stack = [
     note: "REST endpoints, PlayFab/Azure/Firebase-style cloud functions, DTOs, and service boundaries.",
   },
   {
-    name: "Web3 / DataChip",
+    name: "Web3 & On-chain Assets",
     category: "Blockchain",
-    note: "Wallet reading, NFT checks, smart-contract-aware flows, reward validation, and bridge UI/backend integration.",
+    note: "Wallet reads, NFT ownership checks, smart-contract-aware flows, blockchain-to-game asset transfers, reward validation, and backend/Unity integration.",
   },
   {
     name: "QA & Delivery",

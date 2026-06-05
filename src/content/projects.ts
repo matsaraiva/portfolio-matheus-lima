@@ -57,9 +57,9 @@ export const projects: Project[] = [
   },
   {
     slug: "data2073-web3-datachip",
-    title: "Data2073 Web3 DataChip & NFT Integration",
+    title: "Data2073 Web3 & NFT Integration",
     summary:
-      "Wallet-aware Unity flows, NFT/DataChip ownership validation, backend bridge requests, service DTOs, and player-facing UI states across the full client-to-chain integration path.",
+      "Wallet-aware Unity flows, NFT ownership validation, blockchain-to-game asset transfer requests, service DTOs, and player-facing UI states across the full client-to-chain integration path.",
     problem:
       "Blockchain game features require more than a button: wallet reads, NFT ownership checks, reward flows, approval detection, backend bridge routes, retry logic, and user-visible state all need to stay coherent and safe across network and chain conditions.",
     solution:
@@ -97,10 +97,10 @@ export const projects: Project[] = [
     ],
     results: [
       "Built Unity wallet flows that handle service calls, ownership checks, approval states, retries, and user-facing feedback in a single coherent integration.",
-      "Connected backend cloud functions to Unity client state for DataChip bridge and reward flows without exposing private keys or unreleased infrastructure details.",
+      "Connected backend cloud functions to Unity client state for on-chain asset transfer and reward flows without exposing private keys or unreleased infrastructure details.",
       "Delivered QA-validated, production-safe Web3 feature code across Firebase, PlayFab, and Azure function stacks.",
     ],
-    tags: ["Web3", "DataChip", "APIs", "Unity"],
+    tags: ["Web3", "NFT", "APIs", "Unity"],
     category: "Integration Case Study",
     featured: true,
   },
