@@ -114,12 +114,12 @@ export const data2073Stack = [
   {
     name: "Sequence SDK",
     category: "Blockchain",
-    note: "Wallet SDK used in Data2073 for embedded wallet creation, authentication, transaction signing, and cross-chain asset management across SKALE, Moonbeam, and Somnia.",
+    note: "Wallet SDK used for embedded wallet creation, authentication, transaction signing, and cross-chain asset management across SKALE, Moonbeam, and Somnia.",
   },
   {
     name: "SKALE / Moonbeam / Somnia",
     category: "Blockchain",
-    note: "The blockchains used in Data2073: SKALE (gas-free EVM), Moonbeam (Polkadot EVM parachain), and Somnia (new high-throughput chain). Cross-chain gameplay is a core product feature.",
+    note: "Blockchain networks used for cross-chain gameplay: SKALE as gas-free EVM, Moonbeam as a Polkadot EVM parachain, and Somnia as a high-throughput chain.",
   },
   {
     name: "NFT & On-chain Assets",

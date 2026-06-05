@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {
   BadgeCheck,
-  FileText,
   FolderGit2,
   GraduationCap,
   MapPin,
@@ -15,7 +14,6 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { withBasePath } from "@/lib/media";
 
 const noteIcons: Record<string, LucideIcon> = {
-  "Public CV": FileText,
   "LinkedIn profile": Network,
   "GitHub profile": FolderGit2,
 };
@@ -102,7 +100,7 @@ export function AboutSection() {
 
           <div className="grid gap-4 md:grid-cols-3">
             {profile.publicNotes.map((note) => {
-              const Icon = noteIcons[note.label] ?? FileText;
+              const Icon = noteIcons[note.label] ?? Network;
 
               return (
                 <a

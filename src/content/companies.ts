@@ -4,31 +4,31 @@ export const companies: CompanySlot[] = [
   {
     name: "Data2073",
     relationship: "Featured product work",
-    note: "Shipped Unity game on Epic Games Store - cross-chain trading card game with weekly tournaments. Backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
+    note: "Shipped Unity game on Epic Games Store: a cross-chain trading card project with backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
     status: "public",
   },
   {
     name: "Sequence",
     relationship: "Wallet infrastructure",
-    note: "Sequence is the wallet SDK powering Data2073's player authentication and asset flows - handling embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
+    note: "Wallet SDK used for player authentication and asset flows: embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
     status: "public",
   },
   {
     name: "N3mus",
     relationship: "Tournament platform partner",
-    note: "N3mus Foundation hosts weekly Data2073 tournaments. Their platform connects the competitive layer of the game to on-chain rewards and player rankings.",
+    note: "Tournament platform partner connecting competitive gameplay to on-chain rewards, events, and player rankings.",
     status: "public",
   },
   {
     name: "intraVerse",
     relationship: "Distribution partner",
-    note: "intraVerse provides a cross-game social and distribution layer for Data2073, connecting the game to a broader Web3 gaming ecosystem.",
+    note: "Cross-game social and distribution layer that connects game launches to a broader Web3 gaming ecosystem.",
     status: "public",
   },
   {
     name: "SKALE / Moonbeam / Somnia",
     relationship: "Blockchain networks",
-    note: "The blockchains powering Data2073: SKALE (gas-free transactions), Moonbeam (EVM-compatible Polkadot parachain), and Somnia (new high-throughput chain). Cross-chain gameplay is a core feature of the product.",
+    note: "Blockchain network layer for cross-chain gameplay: SKALE for gas-free transactions, Moonbeam as an EVM-compatible Polkadot parachain, and Somnia as a high-throughput chain.",
     status: "public",
   },
   {

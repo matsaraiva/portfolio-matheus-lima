@@ -214,12 +214,7 @@ export const projects: Project[] = [
       },
     ],
     videos: [],
-    links: [
-      {
-        label: "Public CV",
-        href: "https://flowcv.com/resume/j35ui14ak4tq",
-      },
-    ],
+    links: [],
     results: [
       "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation - easy to extend without regression.",
       "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
