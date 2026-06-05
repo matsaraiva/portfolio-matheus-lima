@@ -8,6 +8,12 @@ export const companies: CompanySlot[] = [
     status: "public",
   },
   {
+    name: "Sequence",
+    relationship: "Wallet infrastructure",
+    note: "Sequence is the wallet SDK powering Data2073's player authentication and asset flows — handling embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
+    status: "public",
+  },
+  {
     name: "N3mus",
     relationship: "Tournament platform partner",
     note: "N3mus Foundation hosts weekly Data2073 tournaments. Their platform connects the competitive layer of the game to on-chain rewards and player rankings.",
@@ -20,9 +26,9 @@ export const companies: CompanySlot[] = [
     status: "public",
   },
   {
-    name: "Immutable",
-    relationship: "Blockchain infrastructure",
-    note: "Immutable X (Ethereum L2) is the blockchain layer powering Data2073 — NFT card ownership, wallet authentication, and on-chain asset transfers all run on Immutable.",
+    name: "SKALE / Moonbeam / Somnia",
+    relationship: "Blockchain networks",
+    note: "The blockchains powering Data2073: SKALE (gas-free transactions), Moonbeam (EVM-compatible Polkadot parachain), and Somnia (new high-throughput chain). Cross-chain gameplay is a core feature of the product.",
     status: "public",
   },
   {
@@ -60,9 +66,9 @@ export const data2073Outcomes = [
   },
   {
     label: "Web3 integration",
-    value: "Wallet / NFT / On-chain assets",
+    value: "Sequence / SKALE / Moonbeam",
     detail:
-      "Wallet reads, NFT ownership validation, blockchain-to-game asset transfer flows, smart-contract-aware approval paths, and Unity UI states that stay coherent across chain interactions.",
+      "Wallet authentication via Sequence SDK, NFT ownership validation, blockchain-to-game asset transfer flows, and Unity UI states that stay coherent across SKALE, Moonbeam, and Somnia chain interactions.",
   },
   {
     label: "Delivery quality",

@@ -112,9 +112,19 @@ export const data2073Stack = [
     note: "REST endpoints, PlayFab/Azure/Firebase-style cloud functions, DTOs, and service boundaries.",
   },
   {
-    name: "Web3 & On-chain Assets",
+    name: "Sequence SDK",
     category: "Blockchain",
-    note: "Wallet reads, NFT ownership checks, smart-contract-aware flows, blockchain-to-game asset transfers, reward validation, and backend/Unity integration.",
+    note: "Wallet SDK used in Data2073 for embedded wallet creation, authentication, transaction signing, and cross-chain asset management across SKALE, Moonbeam, and Somnia.",
+  },
+  {
+    name: "SKALE / Moonbeam / Somnia",
+    category: "Blockchain",
+    note: "The blockchains used in Data2073: SKALE (gas-free EVM), Moonbeam (Polkadot EVM parachain), and Somnia (new high-throughput chain). Cross-chain gameplay is a core product feature.",
+  },
+  {
+    name: "NFT & On-chain Assets",
+    category: "Blockchain",
+    note: "NFT ownership validation, smart-contract-aware approval flows, on-chain asset transfer logic, and Unity UI states coherent across chain interactions.",
   },
   {
     name: "QA & Delivery",

@@ -23,11 +23,22 @@ export const projects: Project[] = [
       "Gameye",
       "Headless servers",
       "REST APIs",
-      "Immutable X",
+      "Sequence SDK",
+      "SKALE",
+      "Moonbeam",
+      "Somnia",
     ],
     company: "Data2073 / Osten Games",
     year: "2025–2026",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/data2073-multiplayer-liveops/gameplay.png",
+        alt: "Data2073 — card art, battle arena, and cross-chain gameplay",
+        caption: "Data2073: comic-style card art, isometric battle arena, and cross-chain trading card gameplay.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
@@ -43,7 +54,7 @@ export const projects: Project[] = [
         href: "https://store.epicgames.com/pt-BR/p/data2073-9d83d4",
       },
       {
-        label: "Immutable page",
+        label: "Data2073 on Immutable",
         href: "https://www.immutable.com/play/data2073",
       },
     ],
@@ -74,19 +85,30 @@ export const projects: Project[] = [
       "Firebase Functions",
       "PlayFab",
       "Azure Functions",
-      "Immutable X",
+      "Sequence SDK",
+      "SKALE",
+      "Moonbeam",
+      "Somnia",
       "NFT validation",
       "Smart contracts",
     ],
     company: "Data2073 / Osten Games",
     year: "2025–2026",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/data2073-web3-nft/gameplay.png",
+        alt: "Data2073 — Web3 wallet flows, NFT card ownership, and blockchain asset transfers",
+        caption: "Data2073 Web3 integration: wallet-connected gameplay, NFT card ownership, and cross-chain asset flows via Sequence SDK.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP",
-        alt: "Data2073 gameplay — Web3 trading card game on Immutable X",
-        caption: "Data2073 gameplay. NFT card ownership, wallet-connected matches, and cross-chain asset flows.",
+        alt: "Data2073 gameplay — cross-chain trading card game on SKALE and Moonbeam",
+        caption: "Data2073 gameplay. Wallet-connected matches via Sequence SDK, NFT card ownership, and cross-chain asset flows across SKALE, Moonbeam, and Somnia.",
         provider: "youtube",
       },
     ],
@@ -99,9 +121,9 @@ export const projects: Project[] = [
     results: [
       "Built Unity wallet flows that handle service calls, ownership checks, approval states, retries, and user-facing feedback in a single coherent integration.",
       "Connected backend cloud functions to Unity client state for on-chain asset transfer and reward flows without exposing private keys or unreleased infrastructure details.",
-      "Delivered QA-validated, production-safe Web3 feature code across Firebase, PlayFab, and Azure function stacks on Immutable X.",
+      "Delivered QA-validated, production-safe Web3 feature code across Firebase, PlayFab, and Azure function stacks on SKALE, Moonbeam, and Somnia.",
     ],
-    tags: ["Web3", "NFT", "Immutable X", "Unity"],
+    tags: ["Web3", "NFT", "Sequence", "SKALE"],
     category: "Integration Case Study",
     featured: true,
   },
@@ -126,7 +148,15 @@ export const projects: Project[] = [
     ],
     company: "Bright Games",
     year: "2024–2025",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/invaders-tower-defense-online/gameplay.png",
+        alt: "Invaders Tower Defense Online — isometric tower defense gameplay",
+        caption: "Invaders Tower Defense Online: isometric tower defense with online multiplayer, shipped on Steam.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
@@ -174,7 +204,15 @@ export const projects: Project[] = [
     ],
     company: "Osten Games",
     year: "2025–2026",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/merge-tactics-autobattler/gameplay.png",
+        alt: "Merge Tactics — auto-battler board with card merging and unit combat",
+        caption: "Merge Tactics: event-driven auto-battler with weighted bot AI, merge board, and backend-ready reward flows.",
+        provider: "local",
+      },
+    ],
     videos: [],
     links: [
       {
@@ -204,7 +242,15 @@ export const projects: Project[] = [
     tools: ["Unity", "C#", "ScriptableObjects", "Build validation", "QA"],
     company: "Bright Games",
     year: "2024–2025",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/fly-td/gameplay.png",
+        alt: "Fly TD — aerial tower defense with flying enemy units",
+        caption: "Fly TD: tower defense gameplay with aerial enemies, tower targeting systems, and configurable wave logic.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
@@ -241,7 +287,15 @@ export const projects: Project[] = [
     tools: ["Unity", "C#", "Object pooling", "Physics", "Performance profiling"],
     company: "Bright Games",
     year: "2024–2025",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/bright-shooter/gameplay.png",
+        alt: "Bright Shooter — bullet-hell overhead shooter with dense projectile patterns",
+        caption: "Bright Shooter: bullet-hell gameplay with object-pooled projectile systems and frame-stable performance.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
@@ -278,7 +332,15 @@ export const projects: Project[] = [
     tools: ["Unity", "C#", "Physics", "AI", "Build validation"],
     company: "Bright Games",
     year: "2024–2025",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/toy-soldiers-fps/gameplay.png",
+        alt: "Toy Soldiers FPS — first-person shooter with toy soldier aesthetic",
+        caption: "Toy Soldiers FPS: first-person shooter with responsive controller, weapon systems, and enemy AI.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
@@ -315,7 +377,15 @@ export const projects: Project[] = [
     tools: ["Unity", "C#", "Procedural generation", "Object pooling", "Android builds", "Mobile input"],
     company: "Bright Games",
     year: "2024–2025",
-    images: [],
+    images: [
+      {
+        type: "image",
+        src: "/projects/bright-runner/gameplay.png",
+        alt: "Bright Runner — endless runner with procedural obstacles",
+        caption: "Bright Runner: endless runner with procedural obstacle generation, touch input, and Android build delivery.",
+        provider: "local",
+      },
+    ],
     videos: [
       {
         type: "video",
