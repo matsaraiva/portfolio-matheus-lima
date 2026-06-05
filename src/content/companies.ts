@@ -80,23 +80,23 @@ export const data2073Outcomes = [
 
 export const workflow = [
   {
-    title: "Frame the backend contract first",
+    title: "Define clear API and database contracts",
     description:
-      "Start from the API shape, service boundary, or platform constraint that the client or game system needs to depend on.",
+      "Prioritize interface architecture, REST/gRPC endpoints, service boundaries, and data schemas before writing core business logic.",
   },
   {
-    title: "Connect Unity, services, and APIs",
+    title: "Integrate services and cloud pipelines",
     description:
-      "Build or validate client logic, DTOs, cloud function calls, wallet checks, matchmaking paths, and runtime states as one coherent flow.",
+      "Seamlessly connect backend servers, cloud functions, caching layers, and external dependencies (like wallet or ledger integrations) as a unified flow.",
   },
   {
-    title: "Validate through real delivery paths",
+    title: "Rigorous validation & end-to-end testing",
     description:
-      "Use builds, live service calls, Android checks, QA evidence, and regression-focused validation before treating a feature as done.",
+      "Verify system behavior under realistic workloads, perform performance profiling, and run extensive integration test suites before production deployment.",
   },
   {
-    title: "Document what ships",
+    title: "Deliver structured architecture documentation",
     description:
-      "Clear role descriptions, architecture notes, and outcome evidence — so handoffs are clean and the work speaks for itself.",
+      "Write clean, self-documenting code with clear design logs, API specifications, and deployment runbooks for seamless engineering handoffs.",
   },
 ];
