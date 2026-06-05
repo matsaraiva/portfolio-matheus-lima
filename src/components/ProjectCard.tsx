@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Building2, Calendar, ImageIcon } from "lucide-react";
 import type { Project } from "@/content/types";
+import { withBasePath } from "@/lib/media";
 
 type ProjectCardProps = {
   project: Project;
@@ -19,7 +20,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             className="object-cover transition duration-500 group-hover:scale-[1.04]"
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            src={cover.src}
+            src={withBasePath(cover.src)}
           />
         ) : (
           <div className="flex h-full items-center justify-center text-neutral-500">

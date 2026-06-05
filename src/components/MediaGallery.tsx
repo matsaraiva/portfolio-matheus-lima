@@ -42,7 +42,7 @@ export function MediaGallery({ title = "Media gallery", images, videos }: MediaG
                     className="object-cover transition duration-500 group-hover:scale-[1.03]"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    src={item.src}
+                    src={withBasePath(item.src)}
                   />
                 ) : item.type === "video" && item.src ? (
                   <VideoFrame item={item} />

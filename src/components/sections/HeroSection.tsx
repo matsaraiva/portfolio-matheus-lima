@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRight, PanelsTopLeft, UserRound } from "lucide-react";
 import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
+import { withBasePath } from "@/lib/media";
 
 const focusAreas = ["Data2073", "Data systems", "Automation", "AI workflows", "Dashboards"];
 
@@ -14,7 +15,7 @@ export function HeroSection() {
         fill
         loading="eager"
         sizes="100vw"
-        src="/projects/data2073-dashboard-automation/dashboard-overview.png"
+        src={withBasePath("/projects/data2073-dashboard-automation/dashboard-overview.png")}
       />
       <div className="absolute inset-0 bg-neutral-950/76" />
       <div className="absolute inset-0 hero-grid opacity-45" />
