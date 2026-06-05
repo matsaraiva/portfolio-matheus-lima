@@ -41,8 +41,9 @@ All portfolio data is intentionally centralized:
 - `src/content/projects.ts` - case studies, project media, results, tags, links
 - `src/content/tools.ts` - grouped tools and Data2073 stack slots
 - `src/content/companies.ts` - company/client/partner slots, outcomes, workflow
+- `src/content/videos.ts` - portfolio video playlist and video-section copy
 
-Unconfirmed facts are marked as placeholders or TODOs in these files. Replace them only with details Matheus is comfortable publishing.
+Representative visuals are marked as placeholders in these files. Replace them only with approved screenshots, videos, logos, metrics, and client details Matheus is comfortable publishing.
 
 ## Add A Project
 
@@ -106,6 +107,17 @@ External video example:
   type: "video",
   src: "https://www.youtube.com/watch?v=VIDEO_ID",
   alt: "Data2073 walkthrough video",
+  provider: "youtube"
+}
+```
+
+YouTube playlists are also supported:
+
+```ts
+{
+  type: "video",
+  src: "https://www.youtube.com/watch?v=VIDEO_ID&list=PLAYLIST_ID",
+  alt: "Portfolio video playlist",
   provider: "youtube"
 }
 ```

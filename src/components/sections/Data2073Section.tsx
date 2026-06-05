@@ -150,8 +150,8 @@ export function Data2073Section() {
         <div className="mt-14 flex items-center gap-3 rounded-lg border border-emerald-300/50 bg-emerald-50 p-5 text-sm leading-6 text-emerald-950 dark:border-emerald-300/20 dark:bg-emerald-300/10 dark:text-emerald-100">
           <Layers3 aria-hidden className="shrink-0" />
           <p>
-            Unconfirmed outcomes, tools, and company slots stay intentionally marked until Matheus
-            approves the final public version.
+            Private client metrics, unreleased screenshots, and sensitive infrastructure details
+            are intentionally excluded until Matheus approves them for publication.
           </p>
         </div>
       </div>

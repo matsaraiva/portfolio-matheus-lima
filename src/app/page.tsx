@@ -4,6 +4,7 @@ import { Data2073Section } from "@/components/sections/Data2073Section";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { ToolsSection } from "@/components/sections/ToolsSection";
+import { VideoReelSection } from "@/components/sections/VideoReelSection";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <Data2073Section />
         <ProjectsSection />
+        <VideoReelSection />
         <ToolsSection />
         <AboutSection />
         <ContactSection />

@@ -4,18 +4,18 @@ import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
 import { withBasePath } from "@/lib/media";
 
-const focusAreas = ["Data2073", "Data systems", "Automation", "AI workflows", "Dashboards"];
+const focusAreas = ["Data2073", "Unity / C#", "Netcode", "UGS LiveOps", "Web3 APIs"];
 
 export function HeroSection() {
   return (
     <section className="relative min-h-[88svh] overflow-hidden pt-16 text-white">
       <Image
-        alt="Abstract dashboard-style visual for Data2073 portfolio work"
+        alt="Representative systems visual for Data2073 multiplayer, LiveOps, and Web3 work"
         className="object-cover"
         fill
         loading="eager"
         sizes="100vw"
-        src={withBasePath("/projects/data2073-dashboard-automation/dashboard-overview.png")}
+        src={withBasePath("/projects/data2073-multiplayer-liveops/data2073-systems.png")}
       />
       <div className="absolute inset-0 bg-neutral-950/76" />
       <div className="absolute inset-0 hero-grid opacity-45" />

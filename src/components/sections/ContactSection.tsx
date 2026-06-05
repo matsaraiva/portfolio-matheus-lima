@@ -9,9 +9,9 @@ export function ContactSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           align="center"
-          description="LinkedIn is the active public contact path while additional channels are finalized."
+          description="LinkedIn, GitHub, and email are available for project, product, and technical conversations."
           eyebrow="Contact"
-          title="Ready for product, data, and technical conversations"
+          title="Ready for Unity, backend, and product conversations"
         />
 
         <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">

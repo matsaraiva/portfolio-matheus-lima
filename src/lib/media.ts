@@ -22,6 +22,11 @@ export function getExternalVideoEmbed(src: string) {
     const url = new URL(src);
 
     if (url.hostname.includes("youtube.com")) {
+      const list = url.searchParams.get("list");
+      if (list) {
+        return `https://www.youtube.com/embed/videoseries?list=${list}`;
+      }
+
       const id = url.searchParams.get("v");
       return id ? `https://www.youtube.com/embed/${id}` : src;
     }
