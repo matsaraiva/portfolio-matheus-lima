@@ -44,6 +44,12 @@ export const companies: CompanySlot[] = [
     status: "public",
   },
   {
+    name: "Sagui Games",
+    relationship: "Founder & Indie Developer",
+    note: "Indie game studio. Developed and shipped Invaders Tower Defense Online on Steam, and Fly TD.",
+    status: "public",
+  },
+  {
     name: "Freelance",
     relationship: "Independent delivery",
     note: "Independent Unity projects for clients across mobile and game platforms — scope, architecture, and delivery handled end-to-end.",

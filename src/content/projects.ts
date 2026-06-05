@@ -146,7 +146,7 @@ export const projects: Project[] = [
       "Build validation",
       "QA",
     ],
-    company: "Bright Games",
+    company: "Sagui Games",
     year: "2024–2025",
     images: [
       {
@@ -240,7 +240,7 @@ export const projects: Project[] = [
       "Developed Unity/C# gameplay systems covering enemy wave spawning, tower targeting logic, balance tuning via ScriptableObjects, and iterative QA across build cycles.",
     role: "Unity/C# developer working on gameplay systems, wave logic, balance, and QA.",
     tools: ["Unity", "C#", "ScriptableObjects", "Build validation", "QA"],
-    company: "Freelance",
+    company: "Sagui Games",
     year: "2024–2025",
     images: [
       {
