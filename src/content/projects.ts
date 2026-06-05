@@ -29,12 +29,12 @@ export const projects: Project[] = [
       "Somnia",
     ],
     company: "Data2073 / Osten Games",
-    year: "2025–2026",
+    year: "2025-2026",
     images: [
       {
         type: "image",
         src: "/projects/data2073-multiplayer-liveops/gameplay.png",
-        alt: "Data2073 — card art, battle arena, and cross-chain gameplay",
+        alt: "Data2073 - card art, battle arena, and cross-chain gameplay",
         caption: "Data2073: comic-style card art, isometric battle arena, and cross-chain trading card gameplay.",
         provider: "local",
       },
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
-        alt: "Data2073 trailer — cross-chain trading card game",
+        alt: "Data2073 trailer - cross-chain trading card game",
         caption: "Data2073 official trailer. Cross-chain gameplay with weekly tournaments hosted on N3mus and intraVerse.",
         provider: "youtube",
       },
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     problem:
       "Blockchain game features require more than a button: wallet reads, NFT ownership checks, reward flows, approval detection, backend bridge routes, retry logic, and user-visible state all need to stay coherent and safe across network and chain conditions.",
     solution:
-      "Implemented Unity menu states, backend-facing REST wrappers, DTOs, bridge-flow logic, wallet/NFT validation, approval detection, retry paths, and QA evidence around runtime wallet behavior — connected across Unity client, backend cloud functions, and smart-contract endpoints on Immutable X.",
+      "Implemented Unity menu states, backend-facing REST wrappers, DTOs, bridge-flow logic, wallet/NFT validation, approval detection, retry paths, and QA evidence around runtime wallet behavior - connected across Unity client, backend cloud functions, and smart-contract endpoints on Immutable X.",
     role:
       "Unity/backend integration engineer working across C# services, Web3 feature design, API implementation, UI flow stability, and QA.",
     tools: [
@@ -93,12 +93,12 @@ export const projects: Project[] = [
       "Smart contracts",
     ],
     company: "Data2073 / Osten Games",
-    year: "2025–2026",
+    year: "2025-2026",
     images: [
       {
         type: "image",
         src: "/projects/data2073-web3-nft/gameplay.png",
-        alt: "Data2073 — Web3 wallet flows, NFT card ownership, and blockchain asset transfers",
+        alt: "Data2073 - Web3 wallet flows, NFT card ownership, and blockchain asset transfers",
         caption: "Data2073 Web3 integration: wallet-connected gameplay, NFT card ownership, and cross-chain asset flows via Sequence SDK.",
         provider: "local",
       },
@@ -107,7 +107,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
-        alt: "Data2073 gameplay — cross-chain trading card game on SKALE and Moonbeam",
+        alt: "Data2073 gameplay - cross-chain trading card game on SKALE and Moonbeam",
         caption: "Data2073 gameplay. Wallet-connected matches via Sequence SDK, NFT card ownership, and cross-chain asset flows across SKALE, Moonbeam, and Somnia.",
         provider: "youtube",
       },
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     slug: "invaders-tower-defense-online",
     title: "Invaders Tower Defense Online",
     summary:
-      "Online tower defense game shipped on Steam — Unity/C# development covering gameplay systems, online features, build delivery, and production validation.",
+      "Online tower defense game shipped on Steam - Unity/C# development covering gameplay systems, online features, build delivery, and production validation.",
     problem:
       "An online tower defense game needed stable gameplay systems, reliable client builds, and a delivery pipeline that could ship to Steam without regressions.",
     solution:
@@ -147,12 +147,12 @@ export const projects: Project[] = [
       "QA",
     ],
     company: "Sagui Games",
-    year: "2024–2025",
+    year: "2024-2025",
     images: [
       {
         type: "image",
         src: "/projects/invaders-tower-defense-online/gameplay.png",
-        alt: "Invaders Tower Defense Online — isometric tower defense gameplay",
+        alt: "Invaders Tower Defense Online - isometric tower defense gameplay",
         caption: "Invaders Tower Defense Online: isometric tower defense with online multiplayer, shipped on Steam.",
         provider: "local",
       },
@@ -161,7 +161,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=YscTtrmhC30&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=2",
-        alt: "Invaders Tower Defense Online — teaser trailer",
+        alt: "Invaders Tower Defense Online - teaser trailer",
         caption: "Official teaser for Invaders Tower Defense Online, shipped on Steam.",
         provider: "youtube",
       },
@@ -183,7 +183,7 @@ export const projects: Project[] = [
   },
   {
     slug: "merge-tactics-autobattler",
-    title: "Merge Tactics — Systems & Bot AI",
+    title: "Merge Tactics - Systems & Bot AI",
     summary:
       "Unity/C# systems for a PvE auto-battler: event-driven architecture, clean game-loop states, backend-ready reward flows, ScriptableObject balance assets, and weighted bot AI.",
     problem:
@@ -203,12 +203,12 @@ export const projects: Project[] = [
       "Android builds",
     ],
     company: "Osten Games",
-    year: "2025–2026",
+    year: "2025-2026",
     images: [
       {
         type: "image",
         src: "/projects/merge-tactics-autobattler/gameplay.png",
-        alt: "Merge Tactics — auto-battler board with card merging and unit combat",
+        alt: "Merge Tactics - auto-battler board with card merging and unit combat",
         caption: "Merge Tactics: event-driven auto-battler with weighted bot AI, merge board, and backend-ready reward flows.",
         provider: "local",
       },
@@ -221,7 +221,7 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation — easy to extend without regression.",
+      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation - easy to extend without regression.",
       "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
       "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs.",
     ],
@@ -233,7 +233,7 @@ export const projects: Project[] = [
     slug: "fly-td",
     title: "Fly TD",
     summary:
-      "Unity/C# tower defense game — gameplay systems, enemy wave logic, and build delivery as part of Matheus's game portfolio.",
+      "Unity/C# tower defense game - gameplay systems, enemy wave logic, and build delivery as part of Matheus's game portfolio.",
     problem:
       "A tower defense game needed clean gameplay architecture: wave management, enemy paths, tower targeting, and balance parameters all had to be maintainable and expandable.",
     solution:
@@ -241,12 +241,12 @@ export const projects: Project[] = [
     role: "Unity/C# developer working on gameplay systems, wave logic, balance, and QA.",
     tools: ["Unity", "C#", "ScriptableObjects", "Build validation", "QA"],
     company: "Sagui Games",
-    year: "2024–2025",
+    year: "2024-2025",
     images: [
       {
         type: "image",
         src: "/projects/fly-td/gameplay.png",
-        alt: "Fly TD — aerial tower defense with flying enemy units",
+        alt: "Fly TD - aerial tower defense with flying enemy units",
         caption: "Fly TD: tower defense gameplay with aerial enemies, tower targeting systems, and configurable wave logic.",
         provider: "local",
       },
@@ -255,7 +255,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=lkLzyP8x9qo&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=6",
-        alt: "Fly TD — tower defense gameplay demo",
+        alt: "Fly TD - tower defense gameplay demo",
         caption: "Fly TD gameplay demonstration from the portfolio reel.",
         provider: "youtube",
       },
@@ -278,7 +278,7 @@ export const projects: Project[] = [
     slug: "bright-shooter",
     title: "Bright Shooter",
     summary:
-      "A bullet-hell shooter built in Unity/C# — gameplay systems, projectile logic, enemy patterns, and player feedback loops.",
+      "A bullet-hell shooter built in Unity/C# - gameplay systems, projectile logic, enemy patterns, and player feedback loops.",
     problem:
       "A bullet-hell shooter requires precise projectile systems, readable enemy patterns, tight player feedback, and frame-stable performance under heavy object counts.",
     solution:
@@ -286,12 +286,12 @@ export const projects: Project[] = [
     role: "Unity/C# developer responsible for core gameplay systems, projectile architecture, and performance.",
     tools: ["Unity", "C#", "Object pooling", "Physics", "Performance profiling"],
     company: "Bright Games",
-    year: "2024–2025",
+    year: "2024-2025",
     images: [
       {
         type: "image",
         src: "/projects/bright-shooter/gameplay.png",
-        alt: "Bright Shooter — bullet-hell overhead shooter with dense projectile patterns",
+        alt: "Bright Shooter - bullet-hell overhead shooter with dense projectile patterns",
         caption: "Bright Shooter: bullet-hell gameplay with object-pooled projectile systems and frame-stable performance.",
         provider: "local",
       },
@@ -300,7 +300,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=0ud_aYHRu0w&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=3",
-        alt: "Bright Shooter — bullet-hell gameplay demo",
+        alt: "Bright Shooter - bullet-hell gameplay demo",
         caption: "Bright Shooter gameplay demo from the portfolio reel.",
         provider: "youtube",
       },
@@ -323,20 +323,20 @@ export const projects: Project[] = [
     slug: "toy-soldiers-fps",
     title: "Toy Soldiers FPS",
     summary:
-      "A first-person shooter built in Unity/C# — player controller, weapon systems, AI enemies, and game loop from concept to playable build.",
+      "A first-person shooter built in Unity/C# - player controller, weapon systems, AI enemies, and game loop from concept to playable build.",
     problem:
-      "A FPS game needs a responsive player controller, reliable weapon feel, and AI enemies that present a fair challenge — all working together in a stable, playable build.",
+      "A FPS game needs a responsive player controller, reliable weapon feel, and AI enemies that present a fair challenge - all working together in a stable, playable build.",
     solution:
       "Developed Unity/C# FPS systems including character controller, camera handling, weapon firing and reload logic, basic enemy AI, and a game loop with win/lose states and score tracking.",
     role: "Unity/C# developer responsible for FPS mechanics, weapon systems, enemy AI, and game loop.",
     tools: ["Unity", "C#", "Physics", "AI", "Build validation"],
     company: "Bright Games",
-    year: "2024–2025",
+    year: "2024-2025",
     images: [
       {
         type: "image",
         src: "/projects/toy-soldiers-fps/gameplay.png",
-        alt: "Toy Soldiers FPS — first-person shooter with toy soldier aesthetic",
+        alt: "Toy Soldiers FPS - first-person shooter with toy soldier aesthetic",
         caption: "Toy Soldiers FPS: first-person shooter with responsive controller, weapon systems, and enemy AI.",
         provider: "local",
       },
@@ -345,7 +345,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=a-db7GFzQi4&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=5",
-        alt: "Toy Soldiers FPS — gameplay teaser",
+        alt: "Toy Soldiers FPS - gameplay teaser",
         caption: "Toy Soldiers FPS gameplay teaser from the portfolio reel.",
         provider: "youtube",
       },
@@ -368,20 +368,20 @@ export const projects: Project[] = [
     slug: "bright-runner",
     title: "Bright Runner",
     summary:
-      "An endless runner built in Unity/C# — procedural obstacle generation, progressive difficulty, score tracking, and mobile-ready build delivery.",
+      "An endless runner built in Unity/C# - procedural obstacle generation, progressive difficulty, score tracking, and mobile-ready build delivery.",
     problem:
       "An endless runner needs procedural obstacle generation that feels fair and escalates naturally, a responsive player controller for mobile, and a score loop that keeps players engaged.",
     solution:
-      "Built Unity/C# systems for procedural level generation, obstacle pooling, speed escalation curves, touch-based player input, and a score/leaderboard loop — validated across Android builds.",
+      "Built Unity/C# systems for procedural level generation, obstacle pooling, speed escalation curves, touch-based player input, and a score/leaderboard loop - validated across Android builds.",
     role: "Unity/C# developer responsible for procedural generation, player input, progression systems, and Android delivery.",
     tools: ["Unity", "C#", "Procedural generation", "Object pooling", "Android builds", "Mobile input"],
     company: "Bright Games",
-    year: "2024–2025",
+    year: "2024-2025",
     images: [
       {
         type: "image",
         src: "/projects/bright-runner/gameplay.png",
-        alt: "Bright Runner — endless runner with procedural obstacles",
+        alt: "Bright Runner - endless runner with procedural obstacles",
         caption: "Bright Runner: endless runner with procedural obstacle generation, touch input, and Android build delivery.",
         provider: "local",
       },
@@ -390,7 +390,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "https://www.youtube.com/watch?v=Ree1qJVGJp0&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=4",
-        alt: "Bright Runner — endless runner gameplay demo",
+        alt: "Bright Runner - endless runner gameplay demo",
         caption: "Bright Runner gameplay demo from the portfolio reel.",
         provider: "youtube",
       },

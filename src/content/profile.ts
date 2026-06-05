@@ -6,7 +6,7 @@ export const profile = {
     "Backend engineer and Unity developer specializing in API design, system architecture, multiplayer infrastructure, LiveOps services, and Web3 game integrations",
   location: "Natal, Rio Grande do Norte, Brazil",
   hero:
-    "I design and build the backend layers, API contracts, and system integrations that connect Unity clients, cloud services, and blockchain flows — with a production track record on Data2073.",
+    "I design and build the backend layers, API contracts, and system integrations that connect Unity clients, cloud services, and blockchain flows - with a production track record on Data2073.",
   summary:
     "Information Technology graduate from UFRN with hands-on experience in backend API development, Unity/C# systems, JavaScript/Node.js services, cloud functions, Web3 integration, system architecture, and production validation. I have worked across multiplayer infrastructure, LiveOps, economy systems, and blockchain-connected game features on shipped products.",
   about:
@@ -45,7 +45,7 @@ export const profile = {
     summary:
       "A production Unity game ecosystem: backend API integration, multiplayer infrastructure, LiveOps workflows, Web3/NFT flows, and system architecture across client and server boundaries.",
     description:
-      "Data2073 is the deepest case study in this portfolio. The work spanned C# Unity systems, server-authoritative multiplayer, UGS matchmaking and economy, backend REST integrations, Web3/NFT wallet validation, blockchain-to-game asset transfer flows, LiveOps tooling, QA, and performance optimization — across client, backend, and blockchain layers of a shipped product.",
+      "Data2073 is the deepest case study in this portfolio. The work spanned C# Unity systems, server-authoritative multiplayer, UGS matchmaking and economy, backend REST integrations, Web3/NFT wallet validation, blockchain-to-game asset transfer flows, LiveOps tooling, QA, and performance optimization - across client, backend, and blockchain layers of a shipped product.",
     sourceHref: "https://www.immutable.com/play/data2073",
   },
 };
@@ -62,7 +62,7 @@ export const navigation = [
 export const seo = {
   title: "Matheus Saraiva Lima | Backend, Unity, Multiplayer, LiveOps & Web3",
   description:
-    "Portfolio for Matheus Saraiva Lima — backend API design, system architecture, Unity/C# systems, online multiplayer, LiveOps, and Web3 integration. Production experience on Data2073.",
+    "Portfolio for Matheus Saraiva Lima - backend API design, system architecture, Unity/C# systems, online multiplayer, LiveOps, and Web3 integration. Production experience on Data2073.",
   siteUrl: "https://matsaraiva.github.io/portfolio-matheus-lima",
   ogImage: "/og-image.png",
 };

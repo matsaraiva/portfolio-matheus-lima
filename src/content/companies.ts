@@ -4,13 +4,13 @@ export const companies: CompanySlot[] = [
   {
     name: "Data2073",
     relationship: "Featured product work",
-    note: "Shipped Unity game on Epic Games Store — cross-chain trading card game with weekly tournaments. Backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
+    note: "Shipped Unity game on Epic Games Store - cross-chain trading card game with weekly tournaments. Backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
     status: "public",
   },
   {
     name: "Sequence",
     relationship: "Wallet infrastructure",
-    note: "Sequence is the wallet SDK powering Data2073's player authentication and asset flows — handling embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
+    note: "Sequence is the wallet SDK powering Data2073's player authentication and asset flows - handling embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
     status: "public",
   },
   {
@@ -52,7 +52,7 @@ export const companies: CompanySlot[] = [
   {
     name: "Freelance",
     relationship: "Independent delivery",
-    note: "Independent Unity projects for clients across mobile and game platforms — scope, architecture, and delivery handled end-to-end.",
+    note: "Independent Unity projects for clients across mobile and game platforms - scope, architecture, and delivery handled end-to-end.",
     status: "public",
   },
 ];
@@ -62,7 +62,7 @@ export const data2073Outcomes = [
     label: "Multiplayer architecture",
     value: "Server-authoritative",
     detail:
-      "Dedicated servers, matchmaking, lobbies, Unity Netcode, and hosting migration — all built to preserve gameplay behavior across infrastructure changes.",
+      "Dedicated servers, matchmaking, lobbies, Unity Netcode, and hosting migration - all built to preserve gameplay behavior across infrastructure changes.",
   },
   {
     label: "LiveOps backend",
