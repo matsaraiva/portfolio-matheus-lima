@@ -6,13 +6,13 @@ export const projects: Project[] = [
     slug: "data2073-multiplayer-liveops",
     title: "Data2073 Multiplayer, LiveOps & Hosting Migration",
     summary:
-      "Unity/C# and backend-facing work around Data2073 multiplayer, dedicated-server hosting migration, UGS/LiveOps services, matchmaking, and production validation.",
+      "Server-authoritative multiplayer, dedicated-server hosting migration, UGS/LiveOps services, matchmaking, and production validation across client and backend layers.",
     problem:
-      "Data2073 needed to preserve a server-authoritative multiplayer experience while the infrastructure strategy evolved around hosting, allocation, matchmaking, onboarding stability, deck integrity, leaderboard behavior, and build reliability.",
+      "Data2073 needed to preserve a stable, server-authoritative multiplayer experience while the hosting strategy, matchmaking allocation, onboarding flows, and build infrastructure all evolved simultaneously.",
     solution:
-      "The work focused on Unity/C# systems, service boundaries, matchmaking/runtime allocation planning, safe build validation, QA evidence, and documentation that helped keep player-facing flows understandable while backend and hosting pieces changed.",
+      "Designed and maintained Unity/C# systems alongside service boundaries, matchmaking/runtime allocation, safe build validation, QA evidence, and documentation that kept player-facing flows stable while backend and hosting pieces changed underneath.",
     role:
-      "C#/Unity developer supporting multiplayer architecture, UGS/LiveOps workflows, backend integration, QA, optimization, and technical troubleshooting.",
+      "C#/Unity engineer supporting multiplayer architecture, UGS/LiveOps workflows, backend integration, QA, optimization, and technical troubleshooting across the stack.",
     tools: [
       "Unity",
       "C#",
@@ -25,31 +25,14 @@ export const projects: Project[] = [
       "REST APIs",
     ],
     company: "Data2073 / Osten Games",
-    year: "2025-2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/data2073-multiplayer-liveops/data2073-systems.png",
-        alt: "Representative Data2073 multiplayer and LiveOps systems visual",
-        caption:
-          "Representative visual for Data2073 multiplayer, LiveOps, Web3, backend, and validation work.",
-        isPlaceholder: true,
-      },
-      {
-        type: "image",
-        src: "/projects/data2073-dashboard-automation/workflow-map.png",
-        alt: "Representative Data2073 multiplayer and service workflow visual",
-        caption:
-          "Representative workflow map for client, backend, matchmaking, and validation paths.",
-        isPlaceholder: true,
-      },
-    ],
+    year: "2025–2026",
+    images: [],
     videos: [
       {
         type: "video",
         src: videoReel.playlistUrl,
         alt: "Matheus Saraiva Lima portfolio playlist with Data2073 and game-development videos",
-        caption: "Public portfolio playlist used as supporting media for the case study.",
+        caption: "Public portfolio playlist — gameplay and technical demonstrations from Data2073 and related projects.",
         provider: "youtube",
       },
     ],
@@ -64,9 +47,9 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Documented and supported a hosting migration path that kept gameplay rewrite risk low by preserving the dedicated-server and Unity Netcode model.",
-      "Helped frame multiplayer work around onboarding, deck integrity, server boot reliability, matchmaking allocation, and leaderboard behavior.",
-      "Used build validation, QA checks, and technical notes to reduce ambiguity across engineering handoffs.",
+      "Designed a hosting migration path that preserved the dedicated-server and Unity Netcode model without requiring a gameplay rewrite.",
+      "Maintained stable onboarding, deck integrity, server boot reliability, matchmaking allocation, and leaderboard behavior across infrastructure changes.",
+      "Delivered build validation, QA checks, and technical documentation that reduced ambiguity at engineering handoffs.",
     ],
     tags: ["Data2073", "Unity", "Multiplayer", "LiveOps"],
     category: "Featured Case Study",
@@ -76,13 +59,13 @@ export const projects: Project[] = [
     slug: "data2073-web3-datachip",
     title: "Data2073 Web3 DataChip & NFT Integration",
     summary:
-      "A Data2073 case study around wallet-aware Unity flows, NFT/DataChip validation, backend bridge requests, service DTOs, and player-facing UI states.",
+      "Wallet-aware Unity flows, NFT/DataChip ownership validation, backend bridge requests, service DTOs, and player-facing UI states across the full client-to-chain integration path.",
     problem:
-      "Blockchain and game-service features need more than a button in the UI: wallet reads, NFT ownership, reward flows, approvals, backend routes, retries, and user states all need to stay coherent and safe.",
+      "Blockchain game features require more than a button: wallet reads, NFT ownership checks, reward flows, approval detection, backend bridge routes, retry logic, and user-visible state all need to stay coherent and safe across network and chain conditions.",
     solution:
-      "The implementation work included Unity menu states, backend-facing REST wrappers, DTOs, bridge-flow logic, wallet/NFT validation, approval detection, retry paths, and QA notes around runtime wallet behavior.",
+      "Implemented Unity menu states, backend-facing REST wrappers, DTOs, bridge-flow logic, wallet/NFT validation, approval detection, retry paths, and QA evidence around runtime wallet behavior — connected across Unity client, backend cloud functions, and smart-contract endpoints.",
     role:
-      "Unity/backend integration developer working across C# services, Web3 feature validation, API implementation, UI flow stability, and product QA.",
+      "Unity/backend integration engineer working across C# services, Web3 feature design, API implementation, UI flow stability, and QA.",
     tools: [
       "Unity",
       "C#",
@@ -95,23 +78,14 @@ export const projects: Project[] = [
       "Smart contracts",
     ],
     company: "Data2073 / Osten Games",
-    year: "2025-2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/data2073-battledeck-systems/api-flow.png",
-        alt: "Representative Data2073 backend API and Web3 bridge flow visual",
-        caption:
-          "Representative API-flow visual for backend, wallet, approval, and bridge-style interactions.",
-        isPlaceholder: true,
-      },
-    ],
+    year: "2025–2026",
+    images: [],
     videos: [
       {
         type: "video",
         src: videoReel.playlistUrl,
         alt: "Portfolio playlist with Data2073 Web3 and game systems videos",
-        caption: "Public playlist embedded as portfolio media until individual approved clips are selected.",
+        caption: "Public portfolio playlist embedded as supporting media for the Web3 integration case study.",
         provider: "youtube",
       },
     ],
@@ -122,9 +96,9 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Structured Web3-related Unity flows around service calls, wallet state, approval checks, retries, and user-facing feedback.",
-      "Supported backend/client integration for DataChip-style bridge and reward flows without exposing private keys, routes, or unreleased infrastructure details.",
-      "Created a case-study shape that can later accept approved screenshots, architecture diagrams, and walkthrough clips.",
+      "Built Unity wallet flows that handle service calls, ownership checks, approval states, retries, and user-facing feedback in a single coherent integration.",
+      "Connected backend cloud functions to Unity client state for DataChip bridge and reward flows without exposing private keys or unreleased infrastructure details.",
+      "Delivered QA-validated, production-safe Web3 feature code across Firebase, PlayFab, and Azure function stacks.",
     ],
     tags: ["Web3", "DataChip", "APIs", "Unity"],
     category: "Integration Case Study",
@@ -132,15 +106,15 @@ export const projects: Project[] = [
   },
   {
     slug: "merge-tactics-autobattler",
-    title: "Merge Tactics Prototype Systems & Bot AI",
+    title: "Merge Tactics Prototype — Systems & Bot AI",
     summary:
-      "Unity/C# prototype systems for a PvE auto-battler, including event-driven architecture, game-loop states, prototype combat flow, backend reward thinking, and readable bot AI design.",
+      "Unity/C# prototype for a PvE auto-battler: event-driven architecture, clean game-loop states, backend-ready reward flows, ScriptableObject balance assets, and weighted bot AI.",
     problem:
-      "A new auto-battler prototype needed a clean technical foundation: game state separated from views, predictable loop phases, balance assets, backend-ready reward flows, and bot behavior that felt intentional instead of random.",
+      "A new auto-battler prototype needed a solid technical foundation from day one: game state cleanly separated from views, predictable loop phases, backend-ready reward flows, and bot behavior that felt intentional rather than random.",
     solution:
-      "The project notes show a server-authoritative, event-driven C# architecture with a MergeBus wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and weighted bot-evaluation design.",
+      "Designed a server-authoritative, event-driven C# architecture with a MergeBus event wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and a weighted bot-evaluation model with card value, placement score, effect value, recycling, and difficulty tuning.",
     role:
-      "Unity/C# systems developer shaping prototype architecture, gameplay flow, bot AI behavior, backend integration direction, and validation notes.",
+      "Unity/C# systems engineer responsible for prototype architecture, gameplay loop design, bot AI behavior, backend integration direction, and validation.",
     tools: [
       "Unity",
       "C#",
@@ -152,17 +126,8 @@ export const projects: Project[] = [
       "Android builds",
     ],
     company: "Osten Games",
-    year: "2025-2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/merge-tactics-autobattler/merge-tactics-systems.png",
-        alt: "Representative Merge Tactics systems architecture visual",
-        caption:
-          "Representative visual for Merge Tactics architecture, bot AI, backend reward, and validation work.",
-        isPlaceholder: true,
-      },
-    ],
+    year: "2025–2026",
+    images: [],
     videos: [],
     links: [
       {
@@ -171,9 +136,9 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Established a modular foundation with pure C# game state and MonoBehaviour view/binding separation.",
-      "Outlined a readable weighted bot AI model with card value, placement score, effect value, recycling, and difficulty tuning.",
-      "Captured backend and Android validation direction for wallet proof, reward flow, and cloud function handoffs.",
+      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation — easy to extend without regression.",
+      "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
+      "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs.",
     ],
     tags: ["Unity", "C#", "Bot AI", "Architecture"],
     category: "Systems Case Study",
@@ -181,40 +146,36 @@ export const projects: Project[] = [
   },
   {
     slug: "portfolio-case-study-platform",
-    title: "Portfolio Case Study Platform",
+    title: "Portfolio Platform",
     summary:
-      "A static, content-driven Next.js portfolio system designed to publish Matheus's case studies, media, and outcomes without hardcoding private project details.",
+      "A static Next.js portfolio built with TypeScript, App Router, and content-driven architecture — deployed to GitHub Pages with a custom base-path configuration.",
     problem:
-      "Matheus needed a professional public portfolio that could highlight Data2073, embed videos, support project detail pages, and remain easy to deploy to GitHub Pages or other static hosts.",
+      "Needed a professional public portfolio that highlights case studies, embeds video, supports per-project detail pages, and deploys reliably to GitHub Pages without a backend.",
     solution:
-      "The site uses reusable sections, typed content files, static project routes, media gallery support, SEO metadata, theme-aware styling, and deployment-ready static export settings.",
+      "Built with Next.js static export, typed content files, automatic project routing, media gallery support, dark mode, SEO metadata, and a GitHub Actions deploy pipeline.",
     role:
-      "Portfolio architecture, content system, product narrative, frontend implementation, visual system, and deployment documentation.",
-    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Static Export", "GitHub Pages"],
-    company: "Personal portfolio",
+      "Full-stack — architecture, content system, frontend implementation, visual design, and deployment configuration.",
+    tools: ["Next.js", "TypeScript", "Tailwind CSS", "Static Export", "GitHub Actions", "GitHub Pages"],
+    company: "Personal",
     year: "2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/portfolio-platform/portfolio-system.png",
-        alt: "Portfolio content system visual",
-        caption: "Portfolio architecture visual.",
-        isPlaceholder: true,
-      },
-    ],
+    images: [],
     videos: [],
     links: [
       {
         label: "GitHub repository",
         href: "https://github.com/matsaraiva/portfolio-matheus-lima",
       },
+      {
+        label: "Live site",
+        href: "https://matsaraiva.github.io/portfolio-matheus-lima",
+      },
     ],
     results: [
-      "Content files make profile copy, tools, companies, projects, images, and videos easy to edit.",
-      "Project pages support problem, solution, role, stack, company, year, impact, tags, links, images, and videos.",
-      "Static export settings support Vercel, Netlify, and GitHub Pages deployment paths.",
+      "Zero-backend static export with automatic GitHub Pages deployment on every push to main.",
+      "Typed content files make all copy, tools, companies, projects, and media editable in one place.",
+      "Per-project routes generated automatically from the content array — no manual routing needed.",
     ],
-    tags: ["Portfolio", "Frontend", "Content System"],
+    tags: ["Portfolio", "Next.js", "TypeScript"],
     category: "Platform",
   },
 ];

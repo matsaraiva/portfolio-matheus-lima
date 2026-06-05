@@ -4,26 +4,26 @@ export const companies: CompanySlot[] = [
   {
     name: "Data2073",
     relationship: "Featured product work",
-    note: "Public game ecosystem and primary portfolio case study. Logo remains text-only until an approved asset is provided.",
+    note: "Shipped Unity game ecosystem and the primary case study in this portfolio. Backend APIs, multiplayer architecture, LiveOps, and Web3 integration across the full stack.",
     status: "public",
   },
   {
     name: "Osten Games",
-    relationship: "C#/Unity role",
-    note: "Public CV and local project notes connect the work to Unity, multiplayer, Web3, UGS, LiveOps, QA, optimization, and backend integration.",
+    relationship: "C#/Unity engineer",
+    note: "Unity/C# development across multiplayer systems, Web3 features, Unity Game Services, LiveOps tooling, QA, performance optimization, and backend integration.",
     status: "public",
   },
   {
     name: "Bright Games",
-    relationship: "Unity development experience",
-    note: "Listed on the public CV. Add approved project details, dates, screenshots, or logo only after final confirmation.",
-    status: "needs-confirmation",
+    relationship: "Unity developer",
+    note: "Unity development experience across game features and delivery. Additional details available on request.",
+    status: "public",
   },
   {
-    name: "Freelance Unity Work",
+    name: "Freelance",
     relationship: "Independent delivery",
-    note: "Listed on the public CV. Client names and media should stay private until Matheus approves them for publication.",
-    status: "needs-confirmation",
+    note: "Independent Unity projects for clients across mobile and game platforms — scope, architecture, and delivery handled end-to-end.",
+    status: "public",
   },
 ];
 
@@ -32,47 +32,47 @@ export const data2073Outcomes = [
     label: "Multiplayer architecture",
     value: "Server-authoritative",
     detail:
-      "Dedicated-server, matchmaking, lobbies, Unity Netcode, and hosting migration work framed around preserving gameplay behavior.",
+      "Dedicated servers, matchmaking, lobbies, Unity Netcode, and hosting migration — all built to preserve gameplay behavior across infrastructure changes.",
   },
   {
     label: "LiveOps backend",
-    value: "UGS + APIs",
+    value: "UGS + REST APIs",
     detail:
-      "Authentication, economy logic, analytics, Remote Config, Cloud Code, and service integration support.",
+      "Authentication, economy logic, analytics, Remote Config, Cloud Code, and live-service integrations across Unity Game Services and cloud functions.",
   },
   {
-    label: "Web3 systems",
+    label: "Web3 integration",
     value: "Wallet / NFT / DataChip",
     detail:
-      "Wallet reading, NFT validation, reward/bridge flows, smart-contract-aware approval paths, and Unity UI states.",
+      "Wallet reads, NFT ownership validation, reward and bridge flows, smart-contract-aware approval paths, and Unity UI states that stay coherent across chain interactions.",
   },
   {
     label: "Delivery quality",
     value: "Build + QA",
     detail:
-      "Safe build wrappers, Android validation, bug fixing, optimization, regression checks, and technical troubleshooting.",
+      "Safe build wrappers, Android validation, bug fixing, performance optimization, regression checks, and handoff documentation for production-ready features.",
   },
 ];
 
 export const workflow = [
   {
-    title: "Frame the gameplay or product risk",
+    title: "Frame the backend contract first",
     description:
-      "Start from the player flow, platform constraint, backend contract, or LiveOps requirement that needs to work in production.",
+      "Start from the API shape, service boundary, or platform constraint that the client or game system needs to depend on.",
   },
   {
     title: "Connect Unity, services, and APIs",
     description:
-      "Build or validate the client logic, DTOs, backend calls, wallet checks, matchmaking paths, and runtime states as one flow.",
+      "Build or validate client logic, DTOs, cloud function calls, wallet checks, matchmaking paths, and runtime states as one coherent flow.",
   },
   {
-    title: "Test through real delivery paths",
+    title: "Validate through real delivery paths",
     description:
-      "Use builds, service calls, Android checks, QA evidence, and regression-focused validation before treating a feature as done.",
+      "Use builds, live service calls, Android checks, QA evidence, and regression-focused validation before treating a feature as done.",
   },
   {
-    title: "Document what is safe to share",
+    title: "Document what ships",
     description:
-      "Keep public case studies clear about role, tools, problem, solution, videos, and impact without exposing private metrics or secrets.",
+      "Clear role descriptions, architecture notes, and outcome evidence — so handoffs are clean and the work speaks for itself.",
   },
 ];

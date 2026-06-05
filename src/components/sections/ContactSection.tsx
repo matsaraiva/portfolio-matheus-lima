@@ -9,9 +9,9 @@ export function ContactSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           align="center"
-          description="LinkedIn, GitHub, and email are available for project, product, and technical conversations."
+          description="Open to backend, API, and systems engineering roles — remote-friendly and available for conversations."
           eyebrow="Contact"
-          title="Ready for Unity, backend, and product conversations"
+          title="Open to backend and systems engineering roles"
         />
 
         <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">

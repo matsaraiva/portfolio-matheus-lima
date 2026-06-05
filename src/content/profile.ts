@@ -3,31 +3,31 @@ export const profile = {
   fullName: "Matheus Saraiva Alves de Araujo Lima",
   shortName: "Matheus",
   role:
-    "Unity/C# software developer focused on multiplayer, LiveOps, backend APIs, and Web3 game systems",
+    "Backend engineer and Unity developer specializing in API design, system architecture, multiplayer infrastructure, LiveOps services, and Web3 game integrations",
   location: "Natal, Rio Grande do Norte, Brazil",
   hero:
-    "I build game systems that connect Unity clients, dedicated servers, backend services, wallet flows, and production validation - with Data2073 as the main work story.",
+    "I design and build the backend layers, API contracts, and system integrations that connect Unity clients, cloud services, and blockchain flows — with a production track record on Data2073.",
   summary:
-    "Information Technology graduate from UFRN with experience in Unity/C# development, JavaScript/Node.js backends, API integration, technical support, team supervision, QA, and product validation. The portfolio is organized around real work, editable proof, and case studies that can grow with approved screenshots, videos, and outcomes.",
+    "Information Technology graduate from UFRN with hands-on experience in backend API development, Unity/C# systems, JavaScript/Node.js services, cloud functions, Web3 integration, system architecture, and production validation. I have worked across multiplayer infrastructure, LiveOps, economy systems, and blockchain-connected game features on shipped products.",
   about:
-    "I work across Unity gameplay systems, online multiplayer architecture, backend/API implementation, LiveOps, and Web3 features. My background combines technical support, supervision, and software development, which helps me translate complex requirements into stable code, testable flows, clear handoffs, and practical product decisions.",
+    "My strongest work lives at the boundary between game clients and backend services: API contracts, cloud function design, service integration, wallet flows, multiplayer architecture, and the validation that keeps production stable. I hold an Information Technology degree from UFRN and have contributed to shipped Unity products in backend, systems, and integration roles.",
   publicNotes: [
     {
       label: "Public CV",
       value:
-        "Confirms UFRN Information Technology degree, freelance Unity development, Bright Games work, and Osten Games C#/Unity work involving multiplayer, Web3, UGS Cloud Code, economy logic, QA, optimization, and LiveOps tools.",
+        "Full work history including UFRN degree, Osten Games C#/Unity role (multiplayer, Web3, LiveOps, backend integration), Bright Games Unity experience, and independent project delivery.",
       href: "https://flowcv.com/resume/j35ui14ak4tq",
     },
     {
       label: "LinkedIn profile",
       value:
-        "Professional description highlights C#, JavaScript/Node.js, API implementation, netcode, Unity Game Services, LiveOps, Web3 integration, testing, validation, and complex problem solving.",
+        "Professional profile with work timeline and direct contact. Highlights C#, JavaScript/Node.js, REST APIs, Unity Game Services, LiveOps, Web3 integration, and system architecture.",
       href: "https://www.linkedin.com/in/matheus-saraiva-26bab320b/",
     },
     {
       label: "GitHub profile",
       value:
-        "The public GitHub profile at matsaraiva is the default code and portfolio contact reference.",
+        "Public code and project references. Primary technical contact for code review, architecture discussions, and project samples.",
       href: "https://github.com/matsaraiva",
     },
   ],
@@ -43,9 +43,9 @@ export const profile = {
     eyebrow: "Featured Work",
     title: "Data2073",
     summary:
-      "The centerpiece case study: Unity/C# product systems, multiplayer infrastructure, LiveOps workflows, backend APIs, and Web3 integration.",
+      "A production Unity game ecosystem: backend API integration, multiplayer infrastructure, LiveOps workflows, Web3/NFT flows, and system architecture across client and server boundaries.",
     description:
-      "Data2073 is the strongest current portfolio story: a Unity-based game ecosystem where Matheus worked around C# systems, multiplayer synchronization, matchmaking, economy logic, backend integration, Web3/NFT validation, DataChip flows, QA, optimization, and LiveOps tooling. Public and local project notes are used carefully here, with private metrics and unapproved client details left out.",
+      "Data2073 is the deepest case study in this portfolio. The work spanned C# Unity systems, server-authoritative multiplayer, UGS matchmaking and economy, backend REST integrations, Web3/NFT wallet validation, DataChip bridge flows, LiveOps tooling, QA, and performance optimization — across client, backend, and blockchain layers of a shipped product.",
     sourceHref: "https://www.immutable.com/play/data2073",
   },
 };
@@ -60,9 +60,9 @@ export const navigation = [
 ];
 
 export const seo = {
-  title: "Matheus Saraiva Lima | Unity, Multiplayer, LiveOps and Web3 Portfolio",
+  title: "Matheus Saraiva Lima | Backend, Unity, Multiplayer, LiveOps & Web3",
   description:
-    "Portfolio for Matheus Saraiva Lima, focused on Data2073, Unity/C# systems, online multiplayer, backend APIs, LiveOps, Web3 integration, and production-ready game tooling.",
+    "Portfolio for Matheus Saraiva Lima — backend API design, system architecture, Unity/C# systems, online multiplayer, LiveOps, and Web3 integration. Production experience on Data2073.",
   siteUrl: "https://matsaraiva.github.io/portfolio-matheus-lima",
   ogImage: "/og-image.png",
 };

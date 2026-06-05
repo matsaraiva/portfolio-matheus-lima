@@ -7,7 +7,7 @@ export function ToolsSection() {
     <section className="bg-neutral-50 px-4 py-20 dark:bg-neutral-950 sm:px-6 lg:px-8" id="tools">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          description="Tools are grouped by how they support business and product work. No proficiency levels are shown until Matheus chooses to confirm them."
+          description="Organized by discipline — from backend services and cloud infrastructure to Unity systems, Web3 tooling, and product delivery."
           eyebrow="Tools & Skills"
           title="A stack organized around outcomes"
         />

@@ -1,30 +1,27 @@
-import Image from "next/image";
-import { ArrowRight, PanelsTopLeft, UserRound } from "lucide-react";
+import { ArrowRight, Code2, UserRound } from "lucide-react";
 import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
-import { withBasePath } from "@/lib/media";
 
-const focusAreas = ["Data2073", "Unity / C#", "Netcode", "UGS LiveOps", "Web3 APIs"];
+const focusAreas = [
+  "Backend APIs",
+  "System Architecture",
+  "Unity / C#",
+  "Netcode & Multiplayer",
+  "UGS LiveOps",
+  "Web3 Integration",
+];
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[88svh] overflow-hidden pt-16 text-white">
-      <Image
-        alt="Representative systems visual for Data2073 multiplayer, LiveOps, and Web3 work"
-        className="object-cover"
-        fill
-        loading="eager"
-        sizes="100vw"
-        src={withBasePath("/projects/data2073-multiplayer-liveops/data2073-systems.png")}
-      />
-      <div className="absolute inset-0 bg-neutral-950/76" />
-      <div className="absolute inset-0 hero-grid opacity-45" />
+    <section className="relative min-h-[88svh] overflow-hidden pt-16 text-white" style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1f2d 40%, #0a2218 70%, #061a12 100%)" }}>
+      <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(ellipse at 30% 20%, rgba(16,185,129,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(5,150,105,0.06) 0%, transparent 50%)" }} />
+      <div className="absolute inset-0 hero-grid opacity-20" />
 
       <div className="relative mx-auto flex min-h-[calc(88svh-4rem)] max-w-7xl flex-col justify-end px-4 pb-14 pt-24 sm:px-6 lg:px-8">
         <div className="max-w-4xl animate-fade-up">
           <p className="mb-4 inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-xs font-bold uppercase text-emerald-200 backdrop-blur">
-            <PanelsTopLeft aria-hidden size={16} />
-            Data2073-centered portfolio
+            <Code2 aria-hidden size={16} />
+            Backend &amp; Systems Engineer
           </p>
           <h1 className="text-balance text-5xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">
             {profile.name}

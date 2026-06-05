@@ -1,4 +1,4 @@
-import { ArrowUpRight, BadgeCheck, Building2, Clock3, Layers3 } from "lucide-react";
+import { ArrowUpRight, BadgeCheck, Building2, Clock3 } from "lucide-react";
 import { companies, data2073Outcomes, workflow } from "@/content/companies";
 import { profile } from "@/content/profile";
 import { data2073Stack } from "@/content/tools";
@@ -147,13 +147,6 @@ export function Data2073Section() {
           </section>
         </div>
 
-        <div className="mt-14 flex items-center gap-3 rounded-lg border border-emerald-300/50 bg-emerald-50 p-5 text-sm leading-6 text-emerald-950 dark:border-emerald-300/20 dark:bg-emerald-300/10 dark:text-emerald-100">
-          <Layers3 aria-hidden className="shrink-0" />
-          <p>
-            Private client metrics, unreleased screenshots, and sensitive infrastructure details
-            are intentionally excluded until Matheus approves them for publication.
-          </p>
-        </div>
       </div>
     </section>
   );
