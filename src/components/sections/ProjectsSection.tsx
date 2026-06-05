@@ -7,7 +7,7 @@ export function ProjectsSection() {
     <section className="bg-white px-4 py-20 dark:bg-neutral-900 sm:px-6 lg:px-8" id="projects">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          description="Backend architecture, Unity systems, Web3 integrations, and production delivery — each case study covers the problem, the approach, and the outcome."
+          description="Backend architecture, Unity systems, Web3 integrations, and production delivery - each case study covers the problem, the approach, and the outcome."
           eyebrow="Projects"
           title="Game systems, integrations, and delivery proof"
         />
