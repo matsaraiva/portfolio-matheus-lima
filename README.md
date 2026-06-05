@@ -126,13 +126,15 @@ Publish the `out/` directory for static hosting.
 
 ### GitHub Pages
 
-For a repository page hosted at `/portfolio-matheus-lima`, build with:
+This repo includes `.github/workflows/deploy-github-pages.yml`. Every push to `main` builds the static site with the correct `/portfolio-matheus-lima` base path and deploys `out/` to GitHub Pages.
 
-```bash
-$env:NEXT_PUBLIC_BASE_PATH="/portfolio-matheus-lima"; $env:NEXT_PUBLIC_SITE_URL="https://matsaraiva.github.io/portfolio-matheus-lima"; npm run build
+Expected public URL:
+
+```text
+https://matsaraiva.github.io/portfolio-matheus-lima/
 ```
 
-Then publish the `out/` directory.
+If Pages is not enabled yet, set the repository Pages source to **GitHub Actions** in the GitHub repository settings.
 
 ## SEO Assets
 
