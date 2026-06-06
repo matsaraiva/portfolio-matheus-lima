@@ -27,9 +27,9 @@ const companyIcons = [
 
 const companyImages = [
   "/projects/data2073-official/playstore-1.png",
-  "/partners/sequence-wallet.png",
-  "/partners/n3mus-tournaments.png",
-  "/partners/intraverse-distribution.png",
+  "/partners/sequence-wallet-v2.jpg",
+  "/partners/n3mus-tournaments-v2.jpg",
+  "/partners/intraverse-distribution-v2.jpg",
   "/projects/merge-tactics-autobattler/gameplay.png",
   "/projects/bright-shooter/gameplay.png",
   "/projects/invaders-tower-defense-online/gameplay.png",
