@@ -24,7 +24,7 @@ const stackIcons: Record<string, LucideIcon> = {
   "UGS & LiveOps": CloudCog,
   "Backend APIs": ServerCog,
   "Sequence SDK": WalletCards,
-  "SKALE / Moonbeam / Somnia": Network,
+  "Web3 network integrations": Network,
   "NFT & On-chain Assets": WalletCards,
   "QA & Delivery": ShieldCheck,
 };

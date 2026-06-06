@@ -113,17 +113,17 @@ export const data2073Stack = [
   },
   {
     name: "Sequence SDK",
-    category: "Blockchain",
-    note: "Wallet SDK used for embedded wallet creation, authentication, transaction signing, and cross-chain asset management across SKALE, Moonbeam, and Somnia.",
+    category: "Wallet Integration",
+    note: "Embedded wallet creation, authentication, transaction signing, and asset-management flows connected to Unity UI and backend services.",
   },
   {
-    name: "SKALE / Moonbeam / Somnia",
-    category: "Blockchain",
-    note: "Blockchain networks used for cross-chain gameplay: SKALE as gas-free EVM, Moonbeam as a Polkadot EVM parachain, and Somnia as a high-throughput chain.",
+    name: "Web3 network integrations",
+    category: "Platform Infrastructure",
+    note: "Chain-aware service paths for asset movement, reward flows, approvals, and player-facing states without treating the network layer as the portfolio centerpiece.",
   },
   {
     name: "NFT & On-chain Assets",
-    category: "Blockchain",
+    category: "Digital Assets",
     note: "NFT ownership validation, smart-contract-aware approval flows, on-chain asset transfer logic, and Unity UI states coherent across chain interactions.",
   },
   {

@@ -33,9 +33,9 @@ export const projects: Project[] = [
     images: [
       {
         type: "image",
-        src: "/projects/data2073-multiplayer-liveops/gameplay.png",
-        alt: "Data2073 - card art, battle arena, and cross-chain gameplay",
-        caption: "Data2073: comic-style card art, isometric battle arena, and cross-chain trading card gameplay.",
+        src: "/projects/data2073-official/playstore-2.png",
+        alt: "Data2073 - official Google Play battlefield screenshot",
+        caption: "Official Google Play screenshot for DATA2073: Battle Deck, showing tactical battlefield play.",
         provider: "local",
       },
     ],
@@ -97,9 +97,9 @@ export const projects: Project[] = [
     images: [
       {
         type: "image",
-        src: "/projects/data2073-web3-nft/gameplay.png",
-        alt: "Data2073 - Web3 wallet flows, NFT card ownership, and blockchain asset transfers",
-        caption: "Data2073 Web3 integration: wallet-connected gameplay, NFT card ownership, and cross-chain asset flows via Sequence SDK.",
+        src: "/projects/data2073-official/playstore-4.png",
+        alt: "Data2073 - official Google Play digital assets screenshot",
+        caption: "Official Google Play screenshot for DATA2073: Battle Deck, highlighting digital assets and player progression.",
         provider: "local",
       },
     ],

@@ -47,7 +47,6 @@ export const profile = {
 export const navigation = [
   { label: "Work Map", href: "#work-map" },
   { label: "Projects", href: "#projects" },
-  { label: "Videos", href: "#videos" },
   { label: "Tools", href: "#tools" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },

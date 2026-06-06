@@ -4,7 +4,6 @@ import {
   Building2,
   Code2,
   Gamepad2,
-  Layers3,
   Network,
   ServerCog,
   WalletCards,
@@ -20,7 +19,6 @@ const companyIcons = [
   WalletCards,
   Building2,
   Network,
-  Layers3,
   Code2,
   BriefcaseBusiness,
   Gamepad2,
@@ -28,11 +26,10 @@ const companyIcons = [
 ];
 
 const companyImages = [
-  "/projects/data2073-multiplayer-liveops/gameplay.png",
-  "/projects/data2073-web3-nft/gameplay.png",
-  "/projects/data2073-multiplayer-liveops/gameplay.png",
-  "/projects/data2073-web3-nft/gameplay.png",
-  "/profile/tooling-map.png",
+  "/projects/data2073-official/playstore-1.png",
+  "/partners/sequence-wallet.png",
+  "/partners/n3mus-tournaments.png",
+  "/partners/intraverse-distribution.png",
   "/projects/merge-tactics-autobattler/gameplay.png",
   "/projects/bright-shooter/gameplay.png",
   "/projects/invaders-tower-defense-online/gameplay.png",

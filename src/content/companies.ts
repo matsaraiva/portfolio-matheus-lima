@@ -4,13 +4,13 @@ export const companies: CompanySlot[] = [
   {
     name: "Data2073",
     relationship: "Featured product work",
-    note: "Shipped Unity game on Epic Games Store: a cross-chain trading card project with backend APIs, multiplayer architecture, LiveOps, and blockchain integration across the full stack.",
+    note: "Published Unity game work across Google Play and Epic Games Store: backend APIs, multiplayer architecture, LiveOps, platform integrations, and production validation across the full stack.",
     status: "public",
   },
   {
     name: "Sequence",
     relationship: "Wallet infrastructure",
-    note: "Wallet SDK used for player authentication and asset flows: embedded wallets, transaction signing, and cross-chain interactions across SKALE, Moonbeam, and Somnia.",
+    note: "Wallet SDK work around player authentication and asset flows: embedded wallets, transaction signing, service integration, and player-facing state across Unity and backend systems.",
     status: "public",
   },
   {
@@ -23,12 +23,6 @@ export const companies: CompanySlot[] = [
     name: "intraVerse",
     relationship: "Distribution partner",
     note: "Cross-game social and distribution layer that connects game launches to a broader Web3 gaming ecosystem.",
-    status: "public",
-  },
-  {
-    name: "SKALE / Moonbeam / Somnia",
-    relationship: "Blockchain networks",
-    note: "Blockchain network layer for cross-chain gameplay: SKALE for gas-free transactions, Moonbeam as an EVM-compatible Polkadot parachain, and Somnia as a high-throughput chain.",
     status: "public",
   },
   {
@@ -72,9 +66,9 @@ export const data2073Outcomes = [
   },
   {
     label: "Web3 integration",
-    value: "Sequence / SKALE / Moonbeam",
+    value: "Wallet + asset flows",
     detail:
-      "Wallet authentication via Sequence SDK, NFT ownership validation, blockchain-to-game asset transfer flows, and Unity UI states that stay coherent across SKALE, Moonbeam, and Somnia chain interactions.",
+      "Wallet authentication, NFT ownership validation, asset transfer flows, and Unity UI states that stay coherent across service, backend, and chain-aware interactions.",
   },
   {
     label: "Delivery quality",
