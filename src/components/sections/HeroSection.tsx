@@ -1,14 +1,14 @@
-import { ArrowRight, Code2, UserRound } from "lucide-react";
+import { ArrowRight, Briefcase, Gamepad2, UserRound } from "lucide-react";
 import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
 
 const focusAreas = [
-  "Backend APIs",
-  "System Architecture",
   "Unity / C#",
+  "Gameplay Programming",
   "Netcode & Multiplayer",
-  "UGS LiveOps",
-  "Web3 Integration",
+  "Combat & State Machines",
+  "Unity Gaming Services (UGS)",
+  "Performance & Profiling",
 ];
 
 export function HeroSection() {
@@ -24,8 +24,8 @@ export function HeroSection() {
       <div className="relative mx-auto flex min-h-[calc(88svh-4rem)] max-w-7xl flex-col justify-end px-4 pb-14 pt-24 sm:px-6 lg:px-8">
         <div className="max-w-4xl animate-fade-up">
           <p className="mb-4 inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-xs font-bold uppercase text-emerald-200 backdrop-blur">
-            <Code2 aria-hidden size={16} />
-            Backend &amp; Systems Engineer
+            <Gamepad2 aria-hidden size={16} />
+            Game Developer • Unity • C# • Multiplayer
           </p>
           <h1 className="text-balance text-5xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">
             {profile.name}
@@ -34,9 +34,16 @@ export function HeroSection() {
             {profile.role}. {profile.hero}
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/#projects" icon={<ArrowRight aria-hidden size={18} />}>
-              View Projects
+              View Games &amp; Projects
+            </ButtonLink>
+            <ButtonLink
+              href={profile.contact.upwork}
+              icon={<Briefcase aria-hidden size={18} />}
+              variant="secondary"
+            >
+              Hire on Upwork
             </ButtonLink>
             <ButtonLink
               href={profile.contact.linkedin}

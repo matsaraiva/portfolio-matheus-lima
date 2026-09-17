@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { TechnicalProofSection } from "@/components/sections/TechnicalProofSection";
 import { ToolsSection } from "@/components/sections/ToolsSection";
+import { VideoReelSection } from "@/components/sections/VideoReelSection";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export default function Home() {
@@ -13,8 +14,9 @@ export default function Home() {
       <SiteHeader />
       <main>
         <HeroSection />
-        <Data2073Section />
         <ProjectsSection />
+        <VideoReelSection />
+        <Data2073Section />
         <TechnicalProofSection />
         <ToolsSection />
         <AboutSection />

@@ -1,4 +1,4 @@
-import { FolderGit2, Mail, UserRound } from "lucide-react";
+import { Briefcase, FolderGit2, Mail, UserRound } from "lucide-react";
 import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
 import { SectionHeader } from "@/components/SectionHeader";
@@ -9,16 +9,23 @@ export function ContactSection() {
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           align="center"
-          description="Open to backend, API, and systems engineering roles — remote-friendly and available for conversations."
-          eyebrow="Contact"
-          title="Open to backend and systems engineering roles"
+          description="Available for full-time game studio roles, indie contracts, and freelance gameplay/multiplayer engineering on Upwork."
+          eyebrow="Contact &amp; Hire"
+          title="Let's Build Great Games Together"
         />
 
-        <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <ButtonLink
+            href={profile.contact.upwork}
+            icon={<Briefcase aria-hidden size={18} />}
+            variant="primary"
+          >
+            Hire on Upwork
+          </ButtonLink>
           <ButtonLink
             href={profile.contact.linkedin}
             icon={<UserRound aria-hidden size={18} />}
-            variant="primary"
+            variant="secondary"
           >
             LinkedIn
           </ButtonLink>

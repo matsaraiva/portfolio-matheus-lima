@@ -53,50 +53,50 @@ export const companies: CompanySlot[] = [
 
 export const data2073Outcomes = [
   {
-    label: "Multiplayer architecture",
+    label: "Multiplayer netcode",
     value: "Server-authoritative",
     detail:
-      "Dedicated servers, matchmaking, lobbies, Unity Netcode, and hosting migration - all built to preserve gameplay behavior across infrastructure changes.",
+      "Dedicated servers, matchmaking, lobbies, Unity Netcode (NGO), and hosting migration - all built to preserve deterministic gameplay.",
   },
   {
-    label: "LiveOps backend",
+    label: "Combat & gameplay loops",
+    value: "Responsive C# FSM",
+    detail:
+      "Finite state machines for combat, frame-accurate hitbox/hurtbox detection, input buffering, and clean separation between data and view.",
+  },
+  {
+    label: "LiveOps & services",
     value: "UGS + REST APIs",
     detail:
-      "Authentication, economy logic, analytics, Remote Config, Cloud Code, and live-service integrations across Unity Game Services and cloud functions.",
+      "Authentication, economy logic, remote config, telemetry, Cloud Code, and live-service integrations across Unity Gaming Services.",
   },
   {
-    label: "Web3 integration",
-    value: "Wallet + asset flows",
-    detail:
-      "Wallet authentication, NFT ownership validation, asset transfer flows, and Unity UI states that stay coherent across service, backend, and chain-aware interactions.",
-  },
-  {
-    label: "Delivery quality",
+    label: "Delivery & optimization",
     value: "Build + QA",
     detail:
-      "Safe build wrappers, Android validation, bug fixing, performance optimization, regression checks, and handoff documentation for production-ready features.",
+      "Memory and frame-rate profiling, object pooling, mobile/PC multi-platform builds, Steamworks integration, and regression-free releases.",
   },
 ];
 
 export const workflow = [
   {
-    title: "Define clear API and database contracts",
+    title: "Clean gameplay architecture & interfaces",
     description:
-      "Prioritize interface architecture, REST/gRPC endpoints, service boundaries, and data schemas before writing core business logic.",
+      "Separate game state and simulation from MonoBehaviour views using C# interfaces, event buses, and ScriptableObjects for designer-friendly tuning.",
   },
   {
-    title: "Integrate services and cloud pipelines",
+    title: "Robust multiplayer & service integration",
     description:
-      "Seamlessly connect backend servers, cloud functions, caching layers, and external dependencies (like wallet or ledger integrations) as a unified flow.",
+      "Implement server-authoritative loops, state synchronization, matchmaking, and cloud backend contracts that handle latency gracefully.",
   },
   {
-    title: "Rigorous validation & end-to-end testing",
+    title: "Performance profiling & optimization",
     description:
-      "Verify system behavior under realistic workloads, perform performance profiling, and run extensive integration test suites before production deployment.",
+      "Profile CPU/GPU bottlenecks, implement object pooling for projectiles and VFX, minimize garbage collection, and stabilize frame rates on target hardware.",
   },
   {
-    title: "Deliver structured architecture documentation",
+    title: "Automated builds & production QA",
     description:
-      "Write clean, self-documenting code with clear design logs, API specifications, and deployment runbooks for seamless engineering handoffs.",
+      "Maintain reliable multi-platform build pipelines for Steam, Android, and PC, verifying gameplay systems under load before release.",
   },
 ];

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { DatabaseZap } from "lucide-react";
+import { Gamepad2 } from "lucide-react";
 import { navigation, profile } from "@/content/profile";
 import { ThemeToggle } from "./ThemeToggle";
 
@@ -12,7 +12,7 @@ export function SiteHeader() {
           href="/"
         >
           <span className="inline-flex size-9 items-center justify-center rounded-md bg-neutral-950 text-emerald-300 dark:bg-white dark:text-neutral-950">
-            <DatabaseZap aria-hidden size={18} />
+            <Gamepad2 aria-hidden size={18} />
           </span>
           <span className="hidden sm:inline">{profile.name}</span>
           <span className="sm:hidden">{profile.shortName}</span>

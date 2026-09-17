@@ -1,14 +1,12 @@
 import Image from "next/image";
 import {
-  BrainCircuit,
-  BriefcaseBusiness,
   Cloud,
-  Code2,
-  Database,
+  Cpu,
   Gamepad2,
+  Layers3,
+  Network,
   PackageCheck,
   Wrench,
-  Zap,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { toolGroups } from "@/content/tools";
@@ -16,30 +14,29 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { withBasePath } from "@/lib/media";
 
 const groupIcons: Record<string, LucideIcon> = {
-  "Data & BI": Database,
-  Automation: Zap,
-  "AI / ML": BrainCircuit,
-  Backend: Code2,
-  Frontend: Gamepad2,
-  "Cloud / DevOps": Cloud,
-  "Business / Product": BriefcaseBusiness,
+  "Gameplay & Mechanics": Gamepad2,
+  "Netcode & Multiplayer": Network,
+  "Architecture & Systems": Layers3,
+  "Optimization & Profiling": Cpu,
+  "Live Services & Backend": Cloud,
+  "Platforms & Delivery": PackageCheck,
 };
 
 const deliveryLayers = [
   {
     icon: Gamepad2,
-    title: "Client layer",
-    copy: "Unity systems, UI states, gameplay loops, and player-facing validation.",
+    title: "Gameplay & Client Layer",
+    copy: "Character controllers, combat state machines, hitbox detection, physics, and responsive UI.",
   },
   {
-    icon: Code2,
-    title: "Service layer",
-    copy: "REST APIs, cloud functions, DTOs, backend contracts, and integration checks.",
+    icon: Network,
+    title: "Multiplayer & Live Services",
+    copy: "Unity Netcode (NGO), dedicated servers, UGS Matchmaker, Cloud Code, and REST APIs.",
   },
   {
     icon: PackageCheck,
-    title: "Delivery layer",
-    copy: "Build wrappers, QA evidence, LiveOps readiness, and stakeholder handoffs.",
+    title: "Optimization & Storefront Delivery",
+    copy: "Memory/CPU profiling, object pooling, Steamworks SDK integration, and multiplatform builds.",
   },
 ];
 
@@ -48,9 +45,9 @@ export function ToolsSection() {
     <section className="bg-neutral-50 px-4 py-20 dark:bg-neutral-950 sm:px-6 lg:px-8" id="tools">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          description="Organized by discipline - from backend services and cloud infrastructure to Unity systems, Web3 tooling, and product delivery."
-          eyebrow="Tools & Skills"
-          title="A stack organized around outcomes"
+          description="Organized by game development discipline — from core gameplay and netcode to systems architecture, profiling, and storefront delivery."
+          eyebrow="Tools &amp; Skills"
+          title="Game Engineering Tech Stack"
         />
 
         <div className="mt-12 grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr]">

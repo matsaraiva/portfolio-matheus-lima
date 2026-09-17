@@ -3,131 +3,6 @@ import { videoReel } from "./videos";
 
 export const projects: Project[] = [
   {
-    slug: "data2073-multiplayer-liveops",
-    title: "Data2073 Multiplayer, LiveOps & Hosting Migration",
-    summary:
-      "Server-authoritative multiplayer, dedicated-server hosting migration, UGS/LiveOps services, matchmaking, and production validation across client and backend layers.",
-    problem:
-      "Data2073 needed to preserve a stable, server-authoritative multiplayer experience while the hosting strategy, matchmaking allocation, onboarding flows, and build infrastructure all evolved simultaneously.",
-    solution:
-      "Designed and maintained Unity/C# systems alongside service boundaries, matchmaking/runtime allocation, safe build validation, QA evidence, and documentation that kept player-facing flows stable while backend and hosting pieces changed underneath.",
-    role:
-      "C#/Unity engineer supporting multiplayer architecture, UGS/LiveOps workflows, backend integration, QA, optimization, and technical troubleshooting across the stack.",
-    tools: [
-      "Unity",
-      "C#",
-      "Unity Netcode",
-      "Unity Transport",
-      "UGS Matchmaker",
-      "UGS Cloud Code",
-      "Gameye",
-      "Headless servers",
-      "REST APIs",
-      "Sequence SDK",
-      "SKALE",
-      "Moonbeam",
-      "Somnia",
-    ],
-    company: "Data2073 / Osten Games",
-    year: "2025-2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/data2073-official/playstore-2.png",
-        alt: "Data2073 - official Google Play battlefield screenshot",
-        caption: "Official Google Play screenshot for DATA2073: Battle Deck, showing tactical battlefield play.",
-        provider: "local",
-      },
-    ],
-    videos: [
-      {
-        type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
-        alt: "Data2073 trailer - cross-chain trading card game",
-        caption: "Data2073 official trailer. Cross-chain gameplay with weekly tournaments hosted on N3mus and intraVerse.",
-        provider: "youtube",
-      },
-    ],
-    links: [
-      {
-        label: "Epic Games Store",
-        href: "https://store.epicgames.com/pt-BR/p/data2073-9d83d4",
-      },
-      {
-        label: "Data2073 on Immutable",
-        href: "https://www.immutable.com/play/data2073",
-      },
-    ],
-    results: [
-      "Designed a hosting migration path that preserved the dedicated-server and Unity Netcode model without requiring a gameplay rewrite.",
-      "Maintained stable onboarding, deck integrity, server boot reliability, matchmaking allocation, and leaderboard behavior across infrastructure changes.",
-      "Delivered build validation, QA checks, and technical documentation that reduced ambiguity at engineering handoffs.",
-    ],
-    tags: ["Data2073", "Unity", "Multiplayer", "LiveOps"],
-    category: "Featured Case Study",
-    featured: true,
-  },
-  {
-    slug: "data2073-web3-nft",
-    title: "Data2073 Web3 & NFT Integration",
-    summary:
-      "Wallet-aware Unity flows, NFT ownership validation, blockchain-to-game asset transfer requests, service DTOs, and player-facing UI states across the full client-to-chain integration path.",
-    problem:
-      "Blockchain game features require more than a button: wallet reads, NFT ownership checks, reward flows, approval detection, backend bridge routes, retry logic, and user-visible state all need to stay coherent and safe across network and chain conditions.",
-    solution:
-      "Implemented Unity menu states, backend-facing REST wrappers, DTOs, bridge-flow logic, wallet/NFT validation, approval detection, retry paths, and QA evidence around runtime wallet behavior - connected across Unity client, backend cloud functions, and smart-contract endpoints on Immutable X.",
-    role:
-      "Unity/backend integration engineer working across C# services, Web3 feature design, API implementation, UI flow stability, and QA.",
-    tools: [
-      "Unity",
-      "C#",
-      "REST APIs",
-      "Firebase Functions",
-      "PlayFab",
-      "Azure Functions",
-      "Sequence SDK",
-      "SKALE",
-      "Moonbeam",
-      "Somnia",
-      "NFT validation",
-      "Smart contracts",
-    ],
-    company: "Data2073 / Osten Games",
-    year: "2025-2026",
-    images: [
-      {
-        type: "image",
-        src: "/projects/data2073-official/playstore-4.png",
-        alt: "Data2073 - official Google Play digital assets screenshot",
-        caption: "Official Google Play screenshot for DATA2073: Battle Deck, highlighting digital assets and player progression.",
-        provider: "local",
-      },
-    ],
-    videos: [
-      {
-        type: "video",
-        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
-        alt: "Data2073 gameplay - cross-chain trading card game on SKALE and Moonbeam",
-        caption: "Data2073 gameplay. Wallet-connected matches via Sequence SDK, NFT card ownership, and cross-chain asset flows across SKALE, Moonbeam, and Somnia.",
-        provider: "youtube",
-      },
-    ],
-    links: [
-      {
-        label: "Epic Games Store",
-        href: "https://store.epicgames.com/pt-BR/p/data2073-9d83d4",
-      },
-    ],
-    results: [
-      "Built Unity wallet flows that handle service calls, ownership checks, approval states, retries, and user-facing feedback in a single coherent integration.",
-      "Connected backend cloud functions to Unity client state for on-chain asset transfer and reward flows without exposing private keys or unreleased infrastructure details.",
-      "Delivered QA-validated, production-safe Web3 feature code across Firebase, PlayFab, and Azure function stacks on SKALE, Moonbeam, and Somnia.",
-    ],
-    tags: ["Web3", "NFT", "Sequence", "SKALE"],
-    category: "Integration Case Study",
-    featured: true,
-  },
-  {
     slug: "invaders-tower-defense-online",
     title: "Invaders Tower Defense Online",
     summary:
@@ -182,46 +57,62 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "merge-tactics-autobattler",
-    title: "Merge Tactics - Systems & Bot AI",
+    slug: "data2073-multiplayer-liveops",
+    title: "Data2073 Battle Deck - Multiplayer & LiveOps",
     summary:
-      "Unity/C# systems for a PvE auto-battler: event-driven architecture, clean game-loop states, backend-ready reward flows, ScriptableObject balance assets, and weighted bot AI.",
+      "Server-authoritative multiplayer strategy game shipped across Epic Games Store and Google Play: Unity Netcode, dedicated-server hosting, UGS Matchmaker, and live-service operations.",
     problem:
-      "A new auto-battler needed a solid technical foundation from day one: game state cleanly separated from views, predictable loop phases, backend-ready reward flows, and bot behavior that felt intentional rather than random.",
+      "Data2073 needed a rock-solid server-authoritative multiplayer experience across PC and mobile platforms while migrating hosting providers, scaling matchmaking, and maintaining zero-regression game state across updates.",
     solution:
-      "Designed a server-authoritative, event-driven C# architecture with a MergeBus event wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and a weighted bot-evaluation model with card value, placement score, effect value, recycling, and difficulty tuning.",
+      "Engineered Unity/C# multiplayer systems using Unity Netcode and Unity Transport, integrated UGS Matchmaker and Lobbies, structured headless dedicated server orchestration, and established automated build validation and QA pipelines across Epic Games Store and Google Play.",
     role:
-      "Unity/C# systems engineer responsible for game architecture, gameplay loop design, bot AI behavior, backend integration direction, and validation.",
+      "C#/Unity multiplayer engineer responsible for netcode integration, dedicated server hosting, UGS matchmaking, LiveOps pipelines, performance profiling, and production QA.",
     tools: [
       "Unity",
       "C#",
-      "ScriptableObjects",
-      "Event-driven architecture",
-      "Bot AI",
-      "PlayFab CloudScript",
-      "Azure Functions",
-      "Android builds",
+      "Unity Netcode",
+      "Unity Transport",
+      "UGS Matchmaker",
+      "UGS Cloud Code",
+      "Dedicated Servers",
+      "Gameye",
+      "REST APIs",
+      "Performance Profiling",
+      "Multi-platform QA",
     ],
-    company: "Osten Games",
+    company: "Data2073 / Osten Games",
     year: "2025-2026",
     images: [
       {
         type: "image",
-        src: "/projects/merge-tactics-autobattler/gameplay.png",
-        alt: "Merge Tactics - auto-battler board with card merging and unit combat",
-        caption: "Merge Tactics: event-driven auto-battler with weighted bot AI, merge board, and backend-ready reward flows.",
+        src: "/projects/data2073-official/playstore-2.png",
+        alt: "Data2073 - official Google Play battlefield screenshot",
+        caption: "Official Google Play screenshot for DATA2073: Battle Deck, showing tactical battlefield play.",
         provider: "local",
       },
     ],
-    videos: [],
-    links: [],
-    results: [
-      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation - easy to extend without regression.",
-      "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
-      "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs.",
+    videos: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
+        alt: "Data2073 trailer - multiplayer strategy card battler",
+        caption: "Data2073 official trailer showcasing online multiplayer strategy and competitive tournament battles.",
+        provider: "youtube",
+      },
     ],
-    tags: ["Unity", "C#", "Bot AI", "Architecture"],
-    category: "Systems Case Study",
+    links: [
+      {
+        label: "Epic Games Store",
+        href: "https://store.epicgames.com/pt-BR/p/data2073-9d83d4",
+      },
+    ],
+    results: [
+      "Architected dedicated-server multiplayer flows preserving gameplay deterministic state and Unity Netcode stability.",
+      "Maintained reliable matchmaking queues, lobby allocation, and session recovery across cross-platform mobile and PC builds.",
+      "Delivered multiplatform build validation, memory profiling, and automated QA checks for live production updates.",
+    ],
+    tags: ["Unity", "Multiplayer", "Netcode", "LiveOps", "Dedicated Servers"],
+    category: "Shipped Game",
     featured: true,
   },
   {
@@ -268,6 +159,106 @@ export const projects: Project[] = [
     ],
     tags: ["Unity", "C#", "Tower Defense"],
     category: "Shipped Game",
+    featured: true,
+  },
+  {
+    slug: "merge-tactics-autobattler",
+    title: "Merge Tactics - Systems & Bot AI",
+    summary:
+      "Unity/C# systems for a PvE auto-battler: event-driven architecture, clean game-loop states, backend-ready reward flows, ScriptableObject balance assets, and weighted bot AI.",
+    problem:
+      "A new auto-battler needed a solid technical foundation from day one: game state cleanly separated from views, predictable loop phases, backend-ready reward flows, and bot behavior that felt intentional rather than random.",
+    solution:
+      "Designed a server-authoritative, event-driven C# architecture with a MergeBus event wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and a weighted bot-evaluation model with card value, placement score, effect value, recycling, and difficulty tuning.",
+    role:
+      "Unity/C# systems engineer responsible for game architecture, gameplay loop design, bot AI behavior, backend integration direction, and validation.",
+    tools: [
+      "Unity",
+      "C#",
+      "ScriptableObjects",
+      "Event-driven architecture",
+      "Bot AI",
+      "PlayFab CloudScript",
+      "Azure Functions",
+      "Android builds",
+    ],
+    company: "Osten Games",
+    year: "2025-2026",
+    images: [
+      {
+        type: "image",
+        src: "/projects/merge-tactics-autobattler/gameplay.png",
+        alt: "Merge Tactics - auto-battler board with card merging and unit combat",
+        caption: "Merge Tactics: event-driven auto-battler with weighted bot AI, merge board, and backend-ready reward flows.",
+        provider: "local",
+      },
+    ],
+    videos: [],
+    links: [],
+    results: [
+      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation - easy to extend without regression.",
+      "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
+      "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs.",
+    ],
+    tags: ["Unity", "C#", "Bot AI", "Architecture"],
+    category: "Systems Case Study",
+    featured: true,
+  },
+  {
+    slug: "data2073-web3-nft",
+    title: "Data2073 Cloud & Service Integration",
+    summary:
+      "Secure cloud function integrations, account service contracts, player-facing UI states, and robust retry logic across live client and server layers.",
+    problem:
+      "Connected game services require resilient architectures: user authentication, inventory validation, reward distribution, and state consistency must stay dependable across varied network conditions.",
+    solution:
+      "Implemented Unity UI states, REST service wrappers, DTO contracts, and resilient retry logic connected to cloud functions and backend service endpoints.",
+    role:
+      "Unity/backend integration engineer working across C# services, API contracts, UI state stability, and QA validation.",
+    tools: [
+      "Unity",
+      "C#",
+      "REST APIs",
+      "Firebase Functions",
+      "PlayFab",
+      "Azure Functions",
+      "DTO Contracts",
+      "Network Validation",
+    ],
+    company: "Data2073 / Osten Games",
+    year: "2025-2026",
+    images: [
+      {
+        type: "image",
+        src: "/projects/data2073-official/playstore-4.png",
+        alt: "Data2073 - official Google Play digital assets screenshot",
+        caption: "Official Google Play screenshot for DATA2073: Battle Deck, highlighting digital assets and player progression.",
+        provider: "local",
+      },
+    ],
+    videos: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/watch?v=eh6fCOBHs3A&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=1",
+        alt: "Data2073 gameplay trailer",
+        caption: "Data2073 gameplay showcasing tactical battlefield encounters and live service systems.",
+        provider: "youtube",
+      },
+    ],
+    links: [
+      {
+        label: "Epic Games Store",
+        href: "https://store.epicgames.com/pt-BR/p/data2073-9d83d4",
+      },
+    ],
+    results: [
+      "Built robust Unity service wrappers handling API calls, state validation, retry paths, and user feedback.",
+      "Connected backend cloud functions to Unity client state for secure inventory and progress synchronization.",
+      "Delivered QA-validated, production-safe service code across mobile and desktop runtimes.",
+    ],
+    tags: ["Unity", "C#", "Cloud Services", "LiveOps"],
+    category: "Integration Case Study",
+    featured: false,
   },
   {
     slug: "bright-shooter",
@@ -313,6 +304,7 @@ export const projects: Project[] = [
     ],
     tags: ["Unity", "C#", "Shooter", "Performance"],
     category: "Game Project",
+    featured: true,
   },
   {
     slug: "toy-soldiers-fps",
@@ -403,6 +395,126 @@ export const projects: Project[] = [
     ],
     tags: ["Unity", "C#", "Mobile", "Procedural"],
     category: "Game Project",
+  },
+  {
+    slug: "survival-horror-procedural",
+    title: "Survival Horror Procedural",
+    summary:
+      "First-person survival horror mechanics built in Unity/C#: procedural environment generation, atmospheric lighting, dynamic monster pathfinding, and inventory survival systems.",
+    problem:
+      "Survival horror games require deep environmental tension, unpredictable procedural layouts, and reliable AI navigation that challenges players without getting stuck in complex geometries.",
+    solution:
+      "Engineered procedural corridor and room generation algorithms with automated runtime NavMesh surface baking. Implemented stateful monster AI with sight cones, hearing detection, and wandering/stalking states, paired with volumetric lighting and flashlight mechanics.",
+    role:
+      "Unity/C# developer responsible for procedural level generation, enemy AI behavior, NavMesh baking, and survival horror gameplay mechanics.",
+    tools: [
+      "Unity",
+      "C#",
+      "Procedural Generation",
+      "NavMesh AI",
+      "Atmospheric Lighting",
+      "Inventory Systems",
+      "State Machine",
+    ],
+    company: "Independent Project",
+    year: "2024",
+    images: [
+      {
+        type: "image",
+        src: "/projects/survival-horror/cover.jpg",
+        alt: "Survival Horror Procedural - dark Victorian hallway with flashlight and shadowy creature",
+        caption: "Survival Horror Procedural: Unity 3D survival horror featuring procedural corridors, dynamic AI pathfinding, and atmospheric horror mechanics.",
+        provider: "local",
+      },
+    ],
+    videos: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/watch?v=IU2-53cEQw4",
+        alt: "Survival Horror Procedural gameplay demo",
+        caption: "Survival Horror Procedural gameplay demonstration showcasing procedural environment generation and AI pathfinding.",
+        provider: "youtube",
+      },
+    ],
+    links: [
+      {
+        label: "Watch Gameplay Video",
+        href: "https://www.youtube.com/watch?v=IU2-53cEQw4",
+      },
+      {
+        label: "Portfolio Playlist",
+        href: videoReel.playlistUrl,
+      },
+    ],
+    results: [
+      "Engineered procedural layout generation with runtime NavMesh surface baking for seamless AI navigation.",
+      "Implemented enemy AI with multi-sensory detection (field of view, hearing sound events, search and pursuit states).",
+      "Delivered atmospheric volumetric lighting and flashlight mechanics tuned for psychological horror suspense.",
+    ],
+    tags: ["Unity", "C#", "Survival Horror", "Procedural", "AI Navigation"],
+    category: "Gameplay Prototype",
+    featured: true,
+  },
+  {
+    slug: "espirito-de-luta-fighting-game",
+    title: "Espírito de Luta",
+    summary:
+      "A 2.5D fighting game built in Unity/C# featuring character combat state machines, frame-accurate hitbox/hurtbox collision, input buffering, and animation event synchronization.",
+    problem:
+      "Fighting games demand frame-accurate precision, deterministic state transitions, responsive input handling, and reliable hit validation to ensure attacks feel punchy and fair without phantom hits or dropped combos.",
+    solution:
+      "Designed and implemented a modular C# combat engine with a Finite State Machine (FSM) governing fighter states (Idle, Walk, Attack, Block, Hitstun, Knockdown, Recovery). Synchronized active hitboxes and hurtboxes with Unity Animation Events, built an input buffer queue to capture combo sequences reliably, and developed a complete match loop with dynamic 2.5D fight camera framing and round logic.",
+    role:
+      "Lead Gameplay Programmer & Unity Developer responsible for combat architecture, hitbox systems, state machines, animation integration, and fight game loop.",
+    tools: [
+      "Unity",
+      "C#",
+      "Combat State Machine (FSM)",
+      "Hitbox & Hurtbox System",
+      "Animation Events",
+      "Input Buffering",
+      "2.5D Fight Camera",
+      "Game Loop & Round Logic",
+    ],
+    company: "Independent Project",
+    year: "2024",
+    images: [
+      {
+        type: "image",
+        src: "/projects/espirito-de-luta/cover.jpg",
+        alt: "Espírito de Luta - 2.5D fighting game combat arena and martial arts clash",
+        caption: "Espírito de Luta: 2.5D fighting game in Unity featuring custom combat state machine, hitbox systems, and frame data.",
+        provider: "local",
+      },
+    ],
+    videos: [
+      {
+        type: "video",
+        src: "https://www.youtube.com/watch?v=CF1YK3jZGMM&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=7",
+        alt: "Espírito de Luta gameplay video",
+        caption: "Gameplay demonstration of Espírito de Luta showing combat animations, health systems, round counter, and fight mechanics.",
+        provider: "youtube",
+      },
+    ],
+    links: [
+      {
+        label: "Watch Gameplay Video",
+        href: "https://www.youtube.com/watch?v=CF1YK3jZGMM&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=7",
+      },
+      {
+        label: "Portfolio Playlist",
+        href: videoReel.playlistUrl,
+      },
+    ],
+    results: [
+      "Built an extensible Finite State Machine in C# governing combat states, transition rules, and recovery windows.",
+      "Implemented frame-accurate active hitboxes and hurtboxes synchronized via animation events for crisp combat feedback.",
+      "Created an input buffer queue that captures rapid player inputs and executes combos smoothly without missed button presses.",
+      "Delivered a complete fighting match loop: intro, round management, health depletion, knockdown/KO detection, and victory camera.",
+    ],
+    tags: ["Unity", "C#", "Fighting Game", "Combat Systems", "Animation Events"],
+    category: "Gameplay Prototype",
+    featured: true,
   },
 ];
 

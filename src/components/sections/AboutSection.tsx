@@ -1,11 +1,11 @@
 import Image from "next/image";
 import {
-  BadgeCheck,
+  Briefcase,
   FolderGit2,
+  Gamepad2,
   GraduationCap,
   MapPin,
   Network,
-  ServerCog,
   UserRound,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -14,6 +14,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { withBasePath } from "@/lib/media";
 
 const noteIcons: Record<string, LucideIcon> = {
+  "Upwork Profile": Briefcase,
   "LinkedIn profile": Network,
   "GitHub profile": FolderGit2,
 };
@@ -21,18 +22,18 @@ const noteIcons: Record<string, LucideIcon> = {
 const highlights = [
   {
     icon: GraduationCap,
-    title: "UFRN IT degree",
-    copy: "Technical base across software, systems, and analytical problem solving.",
+    title: "UFRN IT Degree",
+    copy: "Foundations in software engineering, algorithms, data structures, and computer graphics.",
   },
   {
-    icon: ServerCog,
-    title: "Systems delivery",
-    copy: "Unity, backend APIs, service integration, and production-facing validation.",
+    icon: Gamepad2,
+    title: "Shipped Game Proof",
+    copy: "Steam release delivery, combat state machines, and multiplatform PC/mobile optimization.",
   },
   {
-    icon: BadgeCheck,
-    title: "Support mindset",
-    copy: "Technical support and supervision experience applied to cleaner handoffs.",
+    icon: Network,
+    title: "Multiplayer Systems",
+    copy: "Server-authoritative netcode, dedicated servers, UGS matchmaking, and LiveOps support.",
   },
 ];
 

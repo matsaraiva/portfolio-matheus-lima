@@ -1,16 +1,16 @@
 import Image from "next/image";
 import {
   BadgeCheck,
-  Cable,
   CloudCog,
+  Cpu,
   FileText,
   Gamepad2,
   Layers3,
   Network,
   ServerCog,
   ShieldCheck,
+  Swords,
   Target,
-  WalletCards,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { data2073Outcomes } from "@/content/companies";
@@ -21,49 +21,49 @@ import { withBasePath } from "@/lib/media";
 const stackIcons: Record<string, LucideIcon> = {
   "Unity / C# Client": Gamepad2,
   "Netcode & Multiplayer": Network,
+  "Combat & State Machines": Swords,
   "UGS & LiveOps": CloudCog,
-  "Backend APIs": ServerCog,
-  "Sequence SDK": WalletCards,
-  "Web3 network integrations": Network,
-  "NFT & On-chain Assets": WalletCards,
-  "QA & Delivery": ShieldCheck,
+  "Optimization & Profiling": Cpu,
+  "Backend APIs & Cloud": ServerCog,
+  "Steamworks & Platforms": Target,
+  "QA & Build Validation": ShieldCheck,
 };
 
 const outcomeIcons: Record<string, LucideIcon> = {
-  "Multiplayer architecture": Network,
-  "LiveOps backend": CloudCog,
-  "Web3 integration": WalletCards,
-  "Delivery quality": BadgeCheck,
+  "Multiplayer netcode": Network,
+  "Combat & gameplay loops": Swords,
+  "LiveOps & services": CloudCog,
+  "Delivery & optimization": BadgeCheck,
 };
 
 const proofPoints = [
   {
-    icon: Target,
-    label: "API contracts",
-    title: "Backend boundaries first",
+    icon: Swords,
+    label: "Gameplay Systems",
+    title: "Deterministic Combat & State Machines",
     description:
-      "REST endpoints, DTOs, service contracts, and data schemas clear enough for Unity and cloud systems to trust.",
+      "Finite state machines (FSM), animation event triggers, frame-accurate hitbox/hurtbox collision, and input buffering for responsive player control.",
   },
   {
-    icon: Cable,
-    label: "Integrations",
-    title: "Services working as one flow",
+    icon: Network,
+    label: "Multiplayer Netcode",
+    title: "Server-Authoritative Synchronization",
     description:
-      "Unity clients, cloud functions, wallet services, matchmaking, analytics, and platform APIs connected into player-facing paths.",
+      "Unity Netcode for GameObjects (NGO), Unity Transport, dedicated server orchestration, matchmaking queues, and session persistence.",
   },
   {
-    icon: ShieldCheck,
-    label: "Validation",
-    title: "Production confidence",
+    icon: Cpu,
+    label: "Performance & Profiling",
+    title: "Frame-Rate & Memory Stability",
     description:
-      "Build checks, Android validation, QA evidence, performance fixes, and regression-focused delivery before a feature is treated as done.",
+      "Object pooling for high-density bullets and VFX, garbage collection reduction, draw call batching, and steady 60fps performance across PC and mobile.",
   },
   {
     icon: FileText,
-    label: "Handoff",
-    title: "Readable technical proof",
+    label: "Production Delivery",
+    title: "Steam & Multi-Platform Validation",
     description:
-      "Architecture notes, API references, test context, and case-study material that make the work easier to review and continue.",
+      "Steamworks SDK integration, multi-platform build pipelines (Windows, Android), automated QA checks, and clean architecture handoffs.",
   },
 ];
 
@@ -72,15 +72,15 @@ export function TechnicalProofSection() {
     <section className="bg-neutral-50 px-4 py-20 dark:bg-neutral-950 sm:px-6 lg:px-8" id="technical-proof">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
-          description="A closer look at the engineering layers behind the visual project work: client systems, APIs, cloud services, Web3 flows, validation, and handoff."
+          description="A closer look at the engineering layers behind the games: combat state machines, authoritative netcode, performance profiling, and production delivery."
           eyebrow="Technical Depth"
-          title="How the work holds together"
+          title="Game Architecture &amp; Engineering Standards"
         />
 
         <div className="mt-12 grid items-center gap-8 lg:grid-cols-[1.08fr_0.92fr]">
           <div className="group relative overflow-hidden rounded-lg border border-neutral-200 bg-neutral-950 shadow-2xl dark:border-white/10">
             <Image
-              alt="Backend, Unity, cloud, automation, and product validation tooling map"
+              alt="Unity, multiplayer netcode, combat architecture, and performance tooling map"
               className="aspect-[16/9] h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-[1.02]"
               height={760}
               src={withBasePath("/profile/tooling-map.png")}
@@ -89,10 +89,10 @@ export function TechnicalProofSection() {
             <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/52 to-transparent" />
             <div className="absolute inset-y-0 left-0 flex max-w-sm flex-col justify-center p-6 text-white">
               <p className="text-xs font-bold uppercase text-emerald-200">
-                Backend + Unity delivery
+                Unity + Multiplayer Engineering
               </p>
               <p className="mt-3 text-sm leading-6 text-neutral-100">
-                Systems work that moves from gameplay to services, cloud delivery, validation, and technical handoff.
+                Architecture that moves cleanly from gameplay input and physics to netcode, cloud services, and production builds.
               </p>
             </div>
           </div>

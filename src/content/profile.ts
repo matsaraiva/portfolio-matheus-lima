@@ -3,19 +3,25 @@ export const profile = {
   fullName: "Matheus Saraiva Alves de Araujo Lima",
   shortName: "Matheus",
   role:
-    "Backend engineer and Unity developer specializing in API design, system architecture, multiplayer infrastructure, LiveOps services, and Web3 game integrations",
+    "Unity Game Developer & Multiplayer Systems Engineer specializing in gameplay programming, combat state machines, server-authoritative netcode, and live services",
   location: "Natal, Rio Grande do Norte, Brazil",
   hero:
-    "I design and build the backend layers, API contracts, and system integrations that connect Unity clients, cloud services, multiplayer infrastructure, and blockchain flows.",
+    "I build responsive gameplay mechanics, combat state machines, server-authoritative multiplayer systems, and live services in Unity and C# for PC and mobile titles.",
   summary:
-    "Information Technology graduate from UFRN with hands-on experience in backend API development, Unity/C# systems, JavaScript/Node.js services, cloud functions, Web3 integration, system architecture, and production validation. I have worked across multiplayer infrastructure, LiveOps, economy systems, and blockchain-connected game features on shipped products.",
+    "Bachelor in Information Technology from UFRN with hands-on experience building gameplay systems, multiplayer netcode, combat state machines, and live services in Unity and C#. Developer behind shipped titles including Invaders Tower Defense Online on Steam, multiplayer strategy games, auto-battlers, and fighting game prototypes.",
   about:
-    "My strongest work lives at the boundary between game clients and backend services: API contracts, cloud function design, service integration, wallet flows, multiplayer architecture, and the validation that keeps production stable. I hold an Information Technology degree from UFRN and have contributed to shipped Unity products in backend, systems, and integration roles.",
+    "My core focus is delivering robust gameplay systems and multiplayer architecture: combat state machines, hitbox/hurtbox systems, Unity Netcode, dedicated server hosting, and performance optimization. In addition to client-side gameplay, I engineer the cloud services and LiveOps pipelines (Unity Gaming Services, REST APIs, Cloud Code) that keep online games running reliably in production.",
   publicNotes: [
+    {
+      label: "Upwork Profile",
+      value:
+        "Verified Upwork Freelancer profile for contract game development, gameplay mechanics, multiplayer netcode, and Unity/C# engineering.",
+      href: "https://www.upwork.com/freelancers/~011d45116389be2515",
+    },
     {
       label: "LinkedIn profile",
       value:
-        "Professional profile with work timeline and direct contact. Highlights C#, JavaScript/Node.js, REST APIs, Unity Game Services, LiveOps, Web3 integration, and system architecture.",
+        "Professional profile with work timeline and direct contact. Highlights Unity, C#, Netcode, Gameplay Systems, Unity Gaming Services, and system architecture.",
       href: "https://www.linkedin.com/in/matheus-saraiva-26bab320b/",
     },
     {
@@ -26,6 +32,7 @@ export const profile = {
     },
   ],
   contact: {
+    upwork: "https://www.upwork.com/freelancers/~011d45116389be2515",
     linkedin: "https://www.linkedin.com/in/matheus-saraiva-26bab320b/",
     github: "https://github.com/matsaraiva",
     email: "mailto:matheussaraiva1@gmail.com",
@@ -34,10 +41,10 @@ export const profile = {
     whatsapp: "",
   },
   data2073: {
-    eyebrow: "Portfolio Core",
+    eyebrow: "Studios & Commercial Delivery",
     title: "Work, clients, and technical proof",
     summary:
-      "A first look at the products, studios, platforms, and engineering layers Matheus works across: Unity, backend APIs, multiplayer, LiveOps, Web3, QA, and delivery.",
+      "A comprehensive look at the studios, products, platforms, and engineering layers Matheus works across: Unity development, multiplayer architecture, live services, and production delivery.",
     description:
       "The deepest featured case study is Data2073, but the portfolio is broader than one product: shipped Unity games, backend/API integration, gameplay systems, Web3 flows, multiplayer infrastructure, production validation, and partner-facing technical delivery.",
     sourceHref: "https://www.immutable.com/play/data2073",
@@ -45,17 +52,19 @@ export const profile = {
 };
 
 export const navigation = [
-  { label: "Work Map", href: "#work-map" },
-  { label: "Projects", href: "#projects" },
-  { label: "Tools", href: "#tools" },
+  { label: "Games & Projects", href: "#projects" },
+  { label: "Gameplay Reel", href: "#video-reel" },
+  { label: "Experience", href: "#work-map" },
+  { label: "Technical Depth", href: "#technical-proof" },
+  { label: "Skills", href: "#tools" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const seo = {
-  title: "Matheus Saraiva Lima | Backend, Unity, Multiplayer, LiveOps & Web3",
+  title: "Matheus Saraiva Lima | Unity Game Developer & Multiplayer Systems Engineer",
   description:
-    "Portfolio for Matheus Saraiva Lima - backend API design, system architecture, Unity/C# systems, online multiplayer, LiveOps, Web3 integration, and shipped game projects.",
+    "Portfolio for Matheus Saraiva Lima - Unity and C# game developer specializing in gameplay programming, server-authoritative multiplayer, combat mechanics, and shipped Steam games.",
   siteUrl: "https://matsaraiva.github.io/portfolio-matheus-lima",
   ogImage: "/og-image.png",
 };
