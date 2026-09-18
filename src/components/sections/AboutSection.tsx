@@ -3,8 +3,8 @@ import { profile } from "@/content/profile";
 import { SectionHeader } from "@/components/SectionHeader";
 
 const experience = [
+  { name: "Sagui Games", role: "Founder & Indie Developer", period: "2022–Present", work: "Independent game studio founded in 2022. Developing and shipping original titles including Invaders Tower Defense Online on Steam, and Fly TD (launched 2023)." },
   { name: "Osten Games", role: "Unity / C# Engineering", period: "2025–2026", work: "Multiplayer, service integrations, and game systems across Data2073 and Merge Tactics." },
-  { name: "Sagui Games", role: "Founder & Indie Developer", period: "2024–2025", work: "Gameplay development and release delivery for Invaders Tower Defense Online, alongside work on Fly TD." },
   { name: "Bright Games", role: "Unity Development", period: "2024–2025", work: "Gameplay systems across shooter, FPS, and runner projects, including projectiles, player control, and enemy behavior." },
 ];
 

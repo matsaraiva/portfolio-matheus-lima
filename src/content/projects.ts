@@ -170,7 +170,7 @@ export const projects: Project[] = [
     slug: "fly-td",
     title: "Fly TD",
     summary:
-      "Unity/C# tower defense game - gameplay systems, enemy wave logic, and build delivery as part of Matheus's game portfolio.",
+      "Unity/C# tower defense game developed starting in 2022 and launched in 2023 under Sagui Games - gameplay systems, enemy wave logic, and build delivery.",
     problem:
       "A tower defense game needed clean gameplay architecture: wave management, enemy paths, tower targeting, and balance parameters all had to be maintainable and expandable.",
     solution:
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     role: "Unity/C# developer working on gameplay systems, wave logic, balance, and QA.",
     tools: ["Unity", "C#", "ScriptableObjects", "Build validation", "QA"],
     company: "Sagui Games",
-    year: "2024-2025",
+    year: "2022-2023",
     images: [
       {
         type: "image",
@@ -204,13 +204,13 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Delivered tower defense gameplay with wave and targeting systems.",
+      "Developed starting in 2022 and launched in 2023 with tower defense gameplay, wave progression, and aerial targeting systems.",
       "Iterated on balance parameters through QA and playtesting cycles.",
       "Maintained clean Unity/C# architecture across the project lifecycle.",
     ],
     tags: ["Unity", "C#", "Tower Defense"],
     category: "Game Project",
-    status: "Game Project",
+    status: "Released",
     featured: false,
   },
   {
