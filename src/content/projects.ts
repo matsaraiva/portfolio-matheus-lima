@@ -6,9 +6,9 @@ export const projects: Project[] = [
     slug: "invaders-tower-defense-online",
     title: "Invaders Tower Defense Online",
     summary:
-      "Online tower defense game shipped on Steam - Unity/C# development covering gameplay systems, online features, build delivery, and production validation.",
+      "Online tower defense shipped on Steam, with Photon PUN2 multiplayer, synchronized co-op waves, Steam items and achievements, Firebase player profiles, and adaptive opponents.",
     problem:
-      "An online tower defense game needed stable gameplay systems, reliable client builds, and a delivery pipeline that could ship to Steam without regressions.",
+      "An online tower defense game needed dependable gameplay systems, client builds, and a delivery pipeline that could ship to Steam.",
     solution:
       "Built and maintained Unity/C# gameplay systems including tower logic, wave management, and online interactions. Contributed to build validation, QA, and production delivery across the release cycle.",
     role:
@@ -16,19 +16,43 @@ export const projects: Project[] = [
     tools: [
       "Unity",
       "C#",
-      "Steam",
-      "Online multiplayer",
-      "Build validation",
-      "QA",
+      "Photon PUN2",
+      "Steamworks",
+      "Steam Inventory",
+      "Steam Leaderboards",
+      "Firebase Auth",
+      "Firebase Realtime Database",
+      "Object Pooling"
     ],
     company: "Sagui Games",
     year: "2024-2025",
     images: [
       {
         type: "image",
-        src: "/projects/invaders-tower-defense-online/gameplay.png",
-        alt: "Invaders Tower Defense Online - isometric tower defense gameplay",
-        caption: "Invaders Tower Defense Online: isometric tower defense with online multiplayer, shipped on Steam.",
+        src: "/projects/invaders-tower-defense-online/official-cover.png",
+        alt: "Official cover artwork for Invaders Tower Defense Online",
+        caption: "Official cover artwork for Invaders Tower Defense Online.",
+        provider: "local",
+      },
+      {
+        type: "image",
+        src: "/projects/invaders-tower-defense-online/steam-gameplay-coop.jpg",
+        alt: "Official Steam gameplay screenshot showing high-wave cooperative fortress defense with laser towers and barrier walls",
+        caption: "Official Steam gameplay: Co-op high-wave fortress defense with pooled laser towers and barricades.",
+        provider: "local",
+      },
+      {
+        type: "image",
+        src: "/projects/invaders-tower-defense-online/steam-gameplay-multiplayer.jpg",
+        alt: "Official Steam gameplay screenshot showing 1v1 competitive multiplayer lane defense with synchronized invader waves",
+        caption: "Official Steam gameplay: Competitive 1v1 online match featuring dual lane defenses and invader routing.",
+        provider: "local",
+      },
+      {
+        type: "image",
+        src: "/projects/invaders-tower-defense-online/steam-gameplay-chessboard.jpg",
+        alt: "Official Steam gameplay screenshot showing custom chessboard arena with specialized defense towers",
+        caption: "Official Steam gameplay: Themed arena showing strategic tower placement and path blocking.",
         provider: "local",
       },
     ],
@@ -48,12 +72,25 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Delivered a shipped Steam title with stable gameplay systems across the full release cycle.",
-      "Maintained build reliability and QA coverage from development through production.",
-      "Contributed Unity/C# gameplay logic for towers, waves, and online player interactions.",
+      "Shipped on Steam with Photon PUN2 multiplayer, synchronized co-op waves, and reconnect handling.",
+      "Integrated Steamworks inventory drops, cosmetic gating, achievements, and best-wave leaderboards.",
+      "Built Firebase Auth and Realtime Database persistence for player profiles, stats, and ELO ratings.",
     ],
     tags: ["Unity", "Steam", "Tower Defense", "Online"],
     category: "Shipped Game",
+    status: "Released",
+    caseStudy: {
+      implementation: [
+        "I built tower logic and wave management in Unity/C#.",
+        "I contributed online interactions, build validation, and QA across the delivery cycle.",
+      ],
+      ownership: [
+        "My role covered gameplay systems, build validation, QA, and production delivery as a Unity/C# developer.",
+      ],
+      constraints: [
+        "I worked on an online game that had to support Steam release delivery and ongoing build validation.",
+      ],
+    },
     featured: true,
   },
   {
@@ -62,7 +99,7 @@ export const projects: Project[] = [
     summary:
       "Server-authoritative multiplayer strategy game shipped across Epic Games Store and Google Play: Unity Netcode, dedicated-server hosting, UGS Matchmaker, and live-service operations.",
     problem:
-      "Data2073 needed a rock-solid server-authoritative multiplayer experience across PC and mobile platforms while migrating hosting providers, scaling matchmaking, and maintaining zero-regression game state across updates.",
+      "Data2073 needed a server-authoritative multiplayer experience across PC and mobile platforms while handling hosting, matchmaking, and game-state changes across updates.",
     solution:
       "Engineered Unity/C# multiplayer systems using Unity Netcode and Unity Transport, integrated UGS Matchmaker and Lobbies, structured headless dedicated server orchestration, and established automated build validation and QA pipelines across Epic Games Store and Google Play.",
     role:
@@ -74,11 +111,12 @@ export const projects: Project[] = [
       "Unity Transport",
       "UGS Matchmaker",
       "UGS Cloud Code",
-      "Dedicated Servers",
+      "UGS Leaderboards",
+      "Remote Config",
+      "UGS Analytics",
+      "Cloud Save",
       "Gameye",
-      "REST APIs",
-      "Performance Profiling",
-      "Multi-platform QA",
+      "Addressables"
     ],
     company: "Data2073 / Osten Games",
     year: "2025-2026",
@@ -107,12 +145,25 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Architected dedicated-server multiplayer flows preserving gameplay deterministic state and Unity Netcode stability.",
-      "Maintained reliable matchmaking queues, lobby allocation, and session recovery across cross-platform mobile and PC builds.",
-      "Delivered multiplatform build validation, memory profiling, and automated QA checks for live production updates.",
+      "Architected dedicated-server multiplayer flows around Unity Netcode and Unity Transport.",
+      "Worked on matchmaking queues, lobby allocation, and session recovery across mobile and PC builds.",
+      "Contributed multiplatform build validation, memory profiling, and QA checks for production updates.",
     ],
     tags: ["Unity", "Multiplayer", "Netcode", "LiveOps", "Dedicated Servers"],
     category: "Shipped Game",
+    status: "Released",
+    caseStudy: {
+      implementation: [
+        "I worked with Unity Netcode, Unity Transport, UGS Matchmaker and Lobbies, and headless dedicated-server orchestration.",
+        "I contributed build validation, QA, and performance profiling to the production workflow.",
+      ],
+      ownership: [
+        "My role covered netcode integration, dedicated-server hosting, matchmaking, LiveOps pipelines, profiling, and QA as a C#/Unity multiplayer engineer.",
+      ],
+      constraints: [
+        "I worked across PC and mobile builds where online sessions coordinate clients, matchmaking, and dedicated servers.",
+      ],
+    },
     featured: true,
   },
   {
@@ -153,34 +204,38 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Delivered stable tower defense gameplay with expandable wave and targeting systems.",
+      "Delivered tower defense gameplay with wave and targeting systems.",
       "Iterated on balance parameters through QA and playtesting cycles.",
       "Maintained clean Unity/C# architecture across the project lifecycle.",
     ],
     tags: ["Unity", "C#", "Tower Defense"],
-    category: "Shipped Game",
-    featured: true,
+    category: "Game Project",
+    status: "Game Project",
+    featured: false,
   },
   {
     slug: "merge-tactics-autobattler",
-    title: "Merge Tactics - Systems & Bot AI",
+    title: "Merge Tactics",
     summary:
-      "Unity/C# systems for a PvE auto-battler: event-driven architecture, clean game-loop states, backend-ready reward flows, ScriptableObject balance assets, and weighted bot AI.",
+      "A playable Unity/C# auto-battler preparing for release. I built all game development except art: gameplay, combat, bots, UI, PlayFab/Azure services, economy, wallets, and leaderboards.",
     problem:
       "A new auto-battler needed a solid technical foundation from day one: game state cleanly separated from views, predictable loop phases, backend-ready reward flows, and bot behavior that felt intentional rather than random.",
     solution:
-      "Designed a server-authoritative, event-driven C# architecture with a MergeBus event wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and a weighted bot-evaluation model with card value, placement score, effect value, recycling, and difficulty tuning.",
+      "Owned the Unity/C# development of an event-driven architecture with a MergeBus event wrapper, core interfaces, GameLoopManager states, preparation commands, combat snapshots, UI shell, ScriptableObject balance assets, and a weighted bot-evaluation model with card value, placement score, effect value, recycling, and difficulty tuning. Art was supplied separately.",
     role:
-      "Unity/C# systems engineer responsible for game architecture, gameplay loop design, bot AI behavior, backend integration direction, and validation.",
+      "Unity/C# developer responsible for all game development, including architecture, gameplay loop design, bot AI behavior, backend integration direction, and validation; art was handled separately.",
     tools: [
       "Unity",
       "C#",
-      "ScriptableObjects",
-      "Event-driven architecture",
-      "Bot AI",
       "PlayFab CloudScript",
       "Azure Functions",
-      "Android builds",
+      "Privy",
+      "Initia",
+      "Leaderboard APIs",
+      "Player Economy",
+      "ScriptableObjects",
+      "Bot AI",
+      "Android"
     ],
     company: "Osten Games",
     year: "2025-2026",
@@ -194,36 +249,58 @@ export const projects: Project[] = [
       },
     ],
     videos: [],
-    links: [],
+    links: [
+      {
+        label: "Google Play · Upcoming release",
+        href: "https://play.google.com/store/apps/details?id=com.ostengames.data2073_merge",
+      },
+    ],
     results: [
-      "Established a modular architecture with pure C# game state and clean MonoBehaviour view/binding separation - easy to extend without regression.",
-      "Implemented a weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
-      "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs.",
+      "Owned the modular architecture with pure C# game state and MonoBehaviour view/binding separation.",
+      "Implemented the weighted bot AI model with tunable card value, placement score, effect value, recycling, and difficulty parameters.",
+      "Defined backend and Android validation paths for wallet proof, reward flows, and cloud function handoffs while owning the rest of the game development.",
     ],
     tags: ["Unity", "C#", "Bot AI", "Architecture"],
-    category: "Systems Case Study",
+    category: "Playable · Upcoming release",
+    status: "In Development",
+    caseStudy: {
+      implementation: [
+        "I separated pure C# game state from MonoBehaviour presentation with a MergeBus event wrapper and GameLoopManager states.",
+        "I built a weighted bot evaluation model using card value, placement score, effect value, recycling, and difficulty parameters.",
+        "I used ScriptableObject assets for balance configuration.",
+      ],
+      ownership: [
+        "I own all game development on the project, including game architecture, loop design, bot behavior, backend integration direction, and validation; art is supplied separately.",
+      ],
+      constraints: [
+        "I designed the system around distinct game-loop phases, configurable balance values, and bot decisions tunable for difficulty.",
+      ],
+    },
     featured: true,
   },
   {
     slug: "data2073-web3-nft",
     title: "Data2073 Cloud & Service Integration",
     summary:
-      "Secure cloud function integrations, account service contracts, player-facing UI states, and robust retry logic across live client and server layers.",
+      "Web3 wallets, multi-chain NFT inventory, Firebase-backed bridge services, and Xsolla purchase fulfillment connected to Unity gameplay and player-facing states.",
     problem:
       "Connected game services require resilient architectures: user authentication, inventory validation, reward distribution, and state consistency must stay dependable across varied network conditions.",
     solution:
-      "Implemented Unity UI states, REST service wrappers, DTO contracts, and resilient retry logic connected to cloud functions and backend service endpoints.",
+      "Implemented Unity UI states, REST service wrappers, DTO contracts, and retry logic connected to cloud functions and backend service endpoints. The integration scope also covered wallet authentication, transaction signing, asset flows, and player-facing state for Web3 features.",
     role:
-      "Unity/backend integration engineer working across C# services, API contracts, UI state stability, and QA validation.",
+      "Unity/backend integration engineer working across C# services, API contracts, wallet and asset flows, UI state, and QA validation.",
     tools: [
       "Unity",
       "C#",
+      "Sequence",
+      "Embedded Wallets",
+      "NFT Inventory",
+      "Firebase",
+      "Node.js",
+      "Xsolla",
+      "UGS Cloud Code",
       "REST APIs",
-      "Firebase Functions",
-      "PlayFab",
-      "Azure Functions",
-      "DTO Contracts",
-      "Network Validation",
+      "ERC-1155"
     ],
     company: "Data2073 / Osten Games",
     year: "2025-2026",
@@ -252,12 +329,26 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Built robust Unity service wrappers handling API calls, state validation, retry paths, and user feedback.",
-      "Connected backend cloud functions to Unity client state for secure inventory and progress synchronization.",
-      "Delivered QA-validated, production-safe service code across mobile and desktop runtimes.",
+      "Built Unity service wrappers handling API calls, state validation, retry paths, and user feedback.",
+      "Connected backend cloud functions to Unity client state for inventory and progress synchronization.",
+      "Implemented wallet authentication, transaction signing, and player-facing asset flow states for Web3 features.",
+      "Delivered service code validated through QA across mobile and desktop runtimes.",
     ],
     tags: ["Unity", "C#", "Cloud Services", "LiveOps"],
     category: "Integration Case Study",
+    status: "Released",
+    caseStudy: {
+      implementation: [
+        "I implemented Unity UI states, REST service wrappers, DTO contracts, cloud functions, and retry paths.",
+        "I connected client and backend state for inventory and progress flows.",
+      ],
+      ownership: [
+        "My role covered C# services, API contracts, UI state work, and QA validation as a Unity/backend integration engineer.",
+      ],
+      constraints: [
+        "I designed backend-connected features so client state and user feedback remained understandable across network conditions.",
+      ],
+    },
     featured: false,
   },
   {
@@ -266,9 +357,9 @@ export const projects: Project[] = [
     summary:
       "A bullet-hell shooter built in Unity/C# - gameplay systems, projectile logic, enemy patterns, and player feedback loops.",
     problem:
-      "A bullet-hell shooter requires precise projectile systems, readable enemy patterns, tight player feedback, and frame-stable performance under heavy object counts.",
+      "A bullet-hell shooter requires precise projectile systems, readable enemy patterns, tight player feedback, and performance attention under heavy object counts.",
     solution:
-      "Built Unity/C# systems for projectile spawning and pooling, enemy attack patterns, player hit detection, visual feedback, and performance profiling to keep the experience stable under load.",
+      "Built Unity/C# systems for projectile spawning and pooling, enemy attack patterns, player hit detection, visual feedback, and performance profiling under load.",
     role: "Unity/C# developer responsible for core gameplay systems, projectile architecture, and performance.",
     tools: ["Unity", "C#", "Object pooling", "Physics", "Performance profiling"],
     company: "Bright Games",
@@ -278,7 +369,7 @@ export const projects: Project[] = [
         type: "image",
         src: "/projects/bright-shooter/gameplay.png",
         alt: "Bright Shooter - bullet-hell overhead shooter with dense projectile patterns",
-        caption: "Bright Shooter: bullet-hell gameplay with object-pooled projectile systems and frame-stable performance.",
+        caption: "Bright Shooter: bullet-hell gameplay with object-pooled projectile systems and performance profiling.",
         provider: "local",
       },
     ],
@@ -298,13 +389,13 @@ export const projects: Project[] = [
       },
     ],
     results: [
-      "Implemented a stable projectile system using object pooling to maintain performance at high bullet counts.",
+      "Implemented a projectile system using object pooling to support high bullet counts.",
       "Built readable enemy attack patterns with configurable parameters for difficulty tuning.",
       "Delivered tight player feedback loops with visual and audio cues validated through playtesting.",
     ],
     tags: ["Unity", "C#", "Shooter", "Performance"],
     category: "Game Project",
-    featured: true,
+    featured: false,
   },
   {
     slug: "toy-soldiers-fps",
@@ -312,7 +403,7 @@ export const projects: Project[] = [
     summary:
       "A first-person shooter built in Unity/C# - player controller, weapon systems, AI enemies, and game loop from concept to playable build.",
     problem:
-      "A FPS game needs a responsive player controller, reliable weapon feel, and AI enemies that present a fair challenge - all working together in a stable, playable build.",
+      "A FPS game needs a responsive player controller, reliable weapon feel, and AI enemies that present a fair challenge in a playable build.",
     solution:
       "Developed Unity/C# FPS systems including character controller, camera handling, weapon firing and reload logic, basic enemy AI, and a game loop with win/lose states and score tracking.",
     role: "Unity/C# developer responsible for FPS mechanics, weapon systems, enemy AI, and game loop.",
@@ -391,7 +482,7 @@ export const projects: Project[] = [
     results: [
       "Delivered a complete endless runner loop with procedural obstacle generation, speed escalation, and score tracking.",
       "Implemented touch-based player input validated on Android builds.",
-      "Used object pooling to maintain stable frame rate across extended play sessions.",
+      "Used object pooling as part of the performance approach for extended play sessions.",
     ],
     tags: ["Unity", "C#", "Mobile", "Procedural"],
     category: "Game Project",
@@ -453,15 +544,15 @@ export const projects: Project[] = [
     ],
     tags: ["Unity", "C#", "Survival Horror", "Procedural", "AI Navigation"],
     category: "Gameplay Prototype",
-    featured: true,
+    featured: false,
   },
   {
     slug: "espirito-de-luta-fighting-game",
     title: "Espírito de Luta",
     summary:
-      "A 2.5D fighting game built in Unity/C# featuring character combat state machines, frame-accurate hitbox/hurtbox collision, input buffering, and animation event synchronization.",
+      "A 2.5D fighting game built in Unity/C# featuring character combat state machines, animation-synchronized hitbox/hurtbox collision, input buffering, and animation event integration.",
     problem:
-      "Fighting games demand frame-accurate precision, deterministic state transitions, responsive input handling, and reliable hit validation to ensure attacks feel punchy and fair without phantom hits or dropped combos.",
+      "Fighting games demand precise state transitions, responsive input handling, and reliable hit validation so attacks can feel readable and fair.",
     solution:
       "Designed and implemented a modular C# combat engine with a Finite State Machine (FSM) governing fighter states (Idle, Walk, Attack, Block, Hitstun, Knockdown, Recovery). Synchronized active hitboxes and hurtboxes with Unity Animation Events, built an input buffer queue to capture combo sequences reliably, and developed a complete match loop with dynamic 2.5D fight camera framing and round logic.",
     role:
@@ -508,13 +599,13 @@ export const projects: Project[] = [
     ],
     results: [
       "Built an extensible Finite State Machine in C# governing combat states, transition rules, and recovery windows.",
-      "Implemented frame-accurate active hitboxes and hurtboxes synchronized via animation events for crisp combat feedback.",
+      "Implemented active hitboxes and hurtboxes synchronized via animation events for combat feedback.",
       "Created an input buffer queue that captures rapid player inputs and executes combos smoothly without missed button presses.",
       "Delivered a complete fighting match loop: intro, round management, health depletion, knockdown/KO detection, and victory camera.",
     ],
     tags: ["Unity", "C#", "Fighting Game", "Combat Systems", "Animation Events"],
     category: "Gameplay Prototype",
-    featured: true,
+    featured: false,
   },
 ];
 

@@ -14,6 +14,14 @@ export type MediaAsset = {
   isPlaceholder?: boolean;
 };
 
+export type ProjectStatus = "Released" | "In Development" | "Prototype" | "Systems Study" | "Game Project";
+
+export type ProjectCaseStudy = {
+  implementation: string[];
+  ownership: string[];
+  constraints: string[];
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -30,6 +38,8 @@ export type Project = {
   results: string[];
   tags: string[];
   category: string;
+  status?: ProjectStatus;
+  caseStudy?: ProjectCaseStudy;
   featured?: boolean;
   isPlaceholder?: boolean;
 };

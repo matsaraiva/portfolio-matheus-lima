@@ -1,67 +1,78 @@
-import { ArrowRight, Briefcase, Gamepad2, UserRound } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, Gamepad2 } from "lucide-react";
 import { profile } from "@/content/profile";
 import { ButtonLink } from "@/components/ButtonLink";
+import { withBasePath } from "@/lib/media";
+import { HeroReel } from "@/components/HeroReel";
 
 const focusAreas = [
   "Unity / C#",
-  "Gameplay Programming",
-  "Netcode & Multiplayer",
-  "Combat & State Machines",
-  "Unity Gaming Services (UGS)",
-  "Performance & Profiling",
+  "Gameplay Systems",
+  "Multiplayer & Netcode",
+  "Live Services & Cloud",
+  "Steamworks & Mobile",
 ];
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-[88svh] overflow-hidden pt-16 text-white" style={{ background: "linear-gradient(135deg, #0a0f1e 0%, #0d1f2d 40%, #0a2218 70%, #061a12 100%)" }}>
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 pointer-events-none"
-        style={{ backgroundImage: "url('/hero-bg.png')" }} 
-      />
-      <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(ellipse at 30% 20%, rgba(16,185,129,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(5,150,105,0.06) 0%, transparent 50%)" }} />
-      <div className="absolute inset-0 hero-grid opacity-20" />
+    <section className="relative overflow-hidden bg-neutral-950 pt-24 text-white">
+      {/* Background Isometric Game Art with Faded Backdrop Effect */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <Image
+          alt=""
+          className="object-cover object-[82%_center] lg:object-right opacity-30 md:opacity-40 transition-opacity duration-700 filter brightness-90 saturate-90"
+          fill
+          sizes="100vw"
+          src={withBasePath("/projects/invaders-tower-defense-online/steam-gameplay-coop.jpg")}
+        />
+        {/* Left-to-right smooth fade: solid dark on left for text, gently revealing art on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/90 md:via-neutral-950/65 to-neutral-950/30" />
+        {/* Vertical fades: smooth top header transition and bottom section melt */}
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-neutral-950/60" />
+      </div>
 
-      <div className="relative mx-auto flex min-h-[calc(88svh-4rem)] max-w-7xl flex-col justify-end px-4 pb-14 pt-24 sm:px-6 lg:px-8">
-        <div className="max-w-4xl animate-fade-up">
-          <p className="mb-4 inline-flex items-center gap-2 rounded-md border border-white/20 bg-white/10 px-3 py-2 text-xs font-bold uppercase text-emerald-200 backdrop-blur">
-            <Gamepad2 aria-hidden size={16} />
-            Game Developer • Unity • C# • Multiplayer
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-12 pt-12 sm:px-6 sm:pt-20 lg:px-8 lg:pb-16">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+        <div className="animate-fade-up">
+          <p className="mb-4 inline-flex items-center gap-2 rounded-md border border-emerald-400/30 bg-emerald-950/60 px-3 py-2 text-xs font-bold uppercase text-emerald-300 backdrop-blur-md">
+            <Gamepad2 aria-hidden size={16} className="text-emerald-400" />
+            Unity Gameplay & Multiplayer Developer
           </p>
-          <h1 className="text-balance text-5xl font-semibold leading-[0.98] text-white sm:text-6xl lg:text-7xl">
-            {profile.name}
+          <p className="mb-4 text-sm font-medium tracking-wide text-neutral-300">{profile.name}</p>
+          <h1 className="text-5xl font-semibold leading-[1.04] tracking-[-0.045em] text-white sm:text-6xl xl:text-7xl">
+            Gameplay.<br />Multiplayer.<br /><span className="text-emerald-300">Production.</span>
           </h1>
-          <p className="mt-6 max-w-3xl text-pretty text-lg leading-8 text-neutral-100 sm:text-xl">
-            {profile.role}. {profile.hero}
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-8 text-neutral-200 sm:text-xl">
+            I build gameplay systems, multiplayer features, and service integrations in Unity and C# for PC and mobile games.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/#projects" icon={<ArrowRight aria-hidden size={18} />}>
-              View Games &amp; Projects
+              Explore Selected Work
             </ButtonLink>
             <ButtonLink
-              href={profile.contact.upwork}
-              icon={<Briefcase aria-hidden size={18} />}
+              href="/#contact"
               variant="secondary"
             >
-              Hire on Upwork
-            </ButtonLink>
-            <ButtonLink
-              href={profile.contact.linkedin}
-              icon={<UserRound aria-hidden size={18} />}
-              variant="secondary"
-            >
-              LinkedIn
+              Get in Touch
             </ButtonLink>
           </div>
+          <div className="mt-5 flex flex-wrap gap-5 text-xs font-medium text-neutral-300">
+            <a className="inline-flex min-h-11 items-center hover:text-emerald-300" href={profile.contact.upwork} rel="noreferrer" target="_blank">Upwork ↗</a>
+            <a className="inline-flex min-h-11 items-center hover:text-emerald-300" href={profile.contact.linkedin} rel="noreferrer" target="_blank">LinkedIn ↗</a>
+            <a className="inline-flex min-h-11 items-center hover:text-emerald-300" href={profile.contact.github} rel="noreferrer" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <HeroReel />
         </div>
 
         <ul
           aria-label="Portfolio focus areas"
-          className="mt-12 flex flex-wrap gap-3 text-sm text-neutral-200"
+          className="mt-10 flex flex-wrap gap-2.5 border-t border-white/10 pt-6 text-sm text-neutral-200"
         >
           {focusAreas.map((area) => (
             <li
-              className="rounded-md border border-white/16 bg-white/8 px-3 py-2 backdrop-blur"
+              className="rounded-md border border-white/15 bg-neutral-900/70 px-3 py-1.5 text-xs sm:text-sm font-medium backdrop-blur-md text-neutral-200 hover:border-emerald-400/40 hover:text-emerald-300 transition"
               key={area}
             >
               {area}

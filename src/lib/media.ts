@@ -1,3 +1,5 @@
+import optimizedImages from "@/content/optimized-images.json";
+
 export function withBasePath(src: string) {
   if (
     !src ||
@@ -10,7 +12,8 @@ export function withBasePath(src: string) {
   }
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-  return `${basePath}${src}`;
+  const displaySource = (optimizedImages as Record<string, string>)[src] ?? src;
+  return `${basePath}${displaySource}`;
 }
 
 export function getExternalVideoEmbed(src: string) {

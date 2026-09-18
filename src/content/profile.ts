@@ -3,7 +3,7 @@ export const profile = {
   fullName: "Matheus Saraiva Alves de Araujo Lima",
   shortName: "Matheus",
   role:
-    "Unity Game Developer & Multiplayer Systems Engineer specializing in gameplay programming, combat state machines, server-authoritative netcode, and live services",
+    "Unity Gameplay & Multiplayer Developer",
   location: "Natal, Rio Grande do Norte, Brazil",
   hero:
     "I build responsive gameplay mechanics, combat state machines, server-authoritative multiplayer systems, and live services in Unity and C# for PC and mobile titles.",
@@ -52,11 +52,9 @@ export const profile = {
 };
 
 export const navigation = [
-  { label: "Games & Projects", href: "#projects" },
-  { label: "Gameplay Reel", href: "#video-reel" },
-  { label: "Experience", href: "#work-map" },
-  { label: "Technical Depth", href: "#technical-proof" },
-  { label: "Skills", href: "#tools" },
+  { label: "Selected Work", href: "#projects" },
+  { label: "Engineering", href: "#engineering" },
+  { label: "More Projects", href: "#more-projects" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];

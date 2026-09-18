@@ -6,6 +6,7 @@ import { ExternalLink, Gamepad2, Play } from "lucide-react";
 import { showcaseVideos, videoReel } from "@/content/videos";
 import { SectionHeader } from "@/components/SectionHeader";
 import { withBasePath } from "@/lib/media";
+import { DeferredVideo } from "@/components/DeferredVideo";
 
 export function VideoReelSection() {
   const [selectedId, setSelectedId] = useState(showcaseVideos[0].id);
@@ -14,7 +15,7 @@ export function VideoReelSection() {
     showcaseVideos.find((v) => v.id === selectedId) ?? showcaseVideos[0];
 
   return (
-    <section className="bg-neutral-900 px-4 py-20 text-white sm:px-6 lg:px-8" id="video-reel">
+    <section className="section-shell bg-neutral-100 dark:bg-neutral-900" id="video-reel">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           description={videoReel.description}
@@ -22,19 +23,10 @@ export function VideoReelSection() {
           title={videoReel.title}
         />
 
-        <div className="mt-12 grid items-start gap-8 lg:grid-cols-[1.5fr_1fr]">
+        <div className="mt-12 grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.5fr_1fr]">
           {/* Main Active Video Player */}
           <div className="overflow-hidden rounded-xl border border-white/10 bg-neutral-950 shadow-2xl">
-            <div className="relative aspect-video w-full bg-black">
-              <iframe
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="h-full w-full"
-                key={activeVideo.id}
-                src={`https://www.youtube.com/embed/${activeVideo.id}`}
-                title={activeVideo.title}
-              />
-            </div>
+            <DeferredVideo key={activeVideo.id} id={activeVideo.id} title={activeVideo.title} poster={activeVideo.thumbnail} />
             <div className="p-6">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <span className="rounded-md bg-emerald-400/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-300 border border-emerald-400/20">
@@ -60,8 +52,8 @@ export function VideoReelSection() {
           </div>
 
           {/* Interactive Video Selector */}
-          <div className="flex flex-col gap-3">
-            <div className="flex items-center justify-between pb-2">
+          <div className="flex min-w-0 flex-col gap-3 rounded-xl bg-neutral-950 p-4 text-white">
+            <div className="flex flex-wrap items-center justify-between gap-3 pb-2">
               <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-neutral-400">
                 <Gamepad2 aria-hidden size={16} className="text-emerald-400" />
                 Select Game Demo ({showcaseVideos.length})
@@ -82,6 +74,7 @@ export function VideoReelSection() {
 
                 return (
                   <button
+                    aria-pressed={isSelected}
                     className={`group flex w-full items-center gap-3.5 rounded-lg border p-3 text-left transition ${
                       isSelected
                         ? "border-emerald-400/80 bg-emerald-400/10 shadow-lg"

@@ -31,6 +31,35 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
+.section-shell {
+  position: relative;
+  padding: 5rem 1.5rem;
+}
+
+[id] {
+  scroll-margin-top: 7rem;
+}
+
+.anchor-alias {
+  position: absolute;
+  top: 0;
+}
+
+:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 5px;
+}
+
+.dark :focus-visible {
+  outline-color: #6ee7b7;
+}
+
+@media (max-width: 639px) {
+  .section-shell {
+    padding: 3.5rem 1rem;
+  }
+}
+
 ::selection {
   background: #6ee7b7;
   color: #101110;

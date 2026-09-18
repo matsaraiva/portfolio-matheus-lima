@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <SiteHeader />
-      <main className="flex min-h-svh items-center justify-center bg-white px-4 pt-20 text-center dark:bg-neutral-950">
+      <main id="main-content" className="flex min-h-svh items-center justify-center bg-white px-4 pt-28 text-center dark:bg-neutral-950">
         <div className="max-w-xl">
           <p className="text-xs font-bold uppercase text-emerald-700 dark:text-emerald-300">
             Page not found

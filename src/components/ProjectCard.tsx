@@ -6,20 +6,22 @@ import { withBasePath } from "@/lib/media";
 
 type ProjectCardProps = {
   project: Project;
+  compact?: boolean;
+  eyebrow?: string;
 };
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, compact = false, eyebrow }: ProjectCardProps) {
   const cover = project.images[0];
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-2xl dark:border-white/10 dark:bg-white/5">
-      <Link className="relative block aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-900" href={`/projects/${project.slug}`}>
+      <Link className="relative block aspect-[16/10] overflow-hidden bg-neutral-100 dark:bg-neutral-900" href={`/projects/${project.slug}/`}>
         {cover?.src ? (
           <Image
             alt={cover.alt}
             className="object-cover transition duration-500 group-hover:scale-[1.04]"
             fill
-            sizes="(max-width: 768px) 100vw, 33vw"
+            sizes={compact ? "(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" : "(max-width: 767px) 100vw, 50vw"}
             src={withBasePath(cover.src)}
           />
         ) : (
@@ -33,6 +35,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </Link>
 
       <div className="flex flex-1 flex-col gap-5 p-5">
+        {eyebrow ? (
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-emerald-700 dark:text-emerald-300">
+            {eyebrow}
+          </p>
+        ) : null}
         <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase text-neutral-500 dark:text-neutral-400">
           <span className="inline-flex items-center gap-1.5">
             <Building2 aria-hidden size={14} />
@@ -53,6 +60,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </p>
         </div>
 
+        {!compact ? (
+          <div className="border-l-2 border-emerald-600 pl-4 dark:border-emerald-300">
+            <p className="text-xs font-semibold uppercase tracking-wider">My contribution</p>
+            <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-300">{project.role}</p>
+          </div>
+        ) : null}
+
         <div className="mt-auto flex flex-wrap gap-2">
           {project.tags.slice(0, 4).map((tag) => (
             <span
@@ -66,7 +80,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <Link
           className="inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 transition hover:text-emerald-900 dark:text-emerald-300 dark:hover:text-emerald-200"
-          href={`/projects/${project.slug}`}
+          href={`/projects/${project.slug}/`}
         >
           View case study
           <ArrowRight aria-hidden size={16} />

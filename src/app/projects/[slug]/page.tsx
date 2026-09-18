@@ -9,13 +9,16 @@ import {
   Calendar,
   CheckCircle2,
   Hammer,
+  ListChecks,
   Target,
   UserRound,
 } from "lucide-react";
 import { MediaGallery } from "@/components/MediaGallery";
 import { SiteHeader } from "@/components/SiteHeader";
 import { getProjectBySlug, projects } from "@/content/projects";
+import type { ProjectCaseStudy } from "@/content/types";
 import { seo } from "@/content/profile";
+import { projectSystems } from "@/content/project-systems";
 
 export const dynamicParams = false;
 
@@ -67,7 +70,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <SiteHeader />
-      <main className="bg-white pt-28 dark:bg-neutral-950">
+      <main className="bg-white pt-28 dark:bg-neutral-950" id="main-content">
         <article className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <Link
             className="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700 transition hover:text-neutral-950 dark:text-neutral-300 dark:hover:text-white"
@@ -170,9 +173,75 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               ) : null}
             </section>
           </div>
+
+          {projectSystems[project.slug] ? (
+            <section className="mt-14" aria-labelledby="system-breakdowns">
+              <h2 className="text-3xl font-semibold tracking-tight" id="system-breakdowns">Inside the systems</h2>
+              <p className="mt-3 max-w-3xl text-base leading-7 text-neutral-600 dark:text-neutral-300">The implementation choices behind the gameplay, services, and player experience.</p>
+              <div className="mt-8 space-y-6">
+                {projectSystems[project.slug].map((system) => (
+                  <article className="rounded-xl border border-neutral-200 bg-neutral-50 p-6 dark:border-white/10 dark:bg-white/5 sm:p-8" id={system.id} key={system.id}>
+                    <h3 className="text-2xl font-semibold">{system.title}</h3>
+                    <div className="mt-6 grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
+                      <div><p className="text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">The challenge</p><p className="mt-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300">{system.challenge}</p></div>
+                      <div><p className="text-xs font-semibold uppercase tracking-widest text-emerald-700 dark:text-emerald-300">What I built</p><p className="mt-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300">{system.implementation}</p><p className="mt-3 text-sm leading-7 text-neutral-600 dark:text-neutral-300">{system.value}</p></div>
+                    </div>
+                    <ul className="mt-6 flex flex-wrap gap-2" aria-label="Technologies">{system.technologies.map((technology) => <li className="rounded-md bg-white px-3 py-1.5 text-xs font-medium dark:bg-white/10" key={technology}>{technology}</li>)}</ul>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : project.caseStudy ? <CaseStudyDetails details={project.caseStudy} /> : null}
         </article>
       </main>
     </>
+  );
+}
+
+function CaseStudyDetails({
+  details,
+}: {
+  details: ProjectCaseStudy;
+}) {
+  return (
+    <section className="mt-14" aria-labelledby="implementation-details-heading">
+      <div className="flex items-start gap-3">
+        <ListChecks aria-hidden className="mt-1 text-emerald-700 dark:text-emerald-300" size={22} />
+        <div>
+          <h2
+            className="text-2xl font-semibold text-neutral-950 dark:text-white"
+            id="implementation-details-heading"
+          >
+            Implementation details
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-neutral-600 dark:text-neutral-400">
+            A concise view of the systems, responsibilities, and constraints behind this work.
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-6 grid gap-5 md:grid-cols-2">
+        <DetailList title="Implementation" items={details.implementation} />
+        <DetailList title="Ownership" items={details.ownership} />
+        <DetailList title="Constraints" items={details.constraints} />
+      </div>
+    </section>
+  );
+}
+
+function DetailList({ title, items }: { title: string; items: string[] }) {
+  return (
+    <article className="rounded-lg border border-neutral-200 bg-neutral-50 p-6 dark:border-white/10 dark:bg-white/5">
+      <h3 className="text-lg font-semibold text-neutral-950 dark:text-white">{title}</h3>
+      <ul className="mt-4 space-y-3">
+        {items.map((item) => (
+          <li className="flex gap-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300" key={item}>
+            <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-600 dark:bg-emerald-300" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 }
 

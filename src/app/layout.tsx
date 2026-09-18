@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { seo } from "@/content/profile";
+import { withBasePath } from "@/lib/media";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     images: [seo.ogImage],
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: withBasePath("/favicon.svg"),
   },
 };
 

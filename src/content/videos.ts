@@ -13,7 +13,7 @@ export const showcaseVideos: ShowcaseVideo[] = [
     genre: "Shipped Steam Game",
     description:
       "Isometric multiplayer tower defense shipped on Steam, showcasing tower targeting, wave loops, and networking.",
-    thumbnail: "/projects/invaders-tower-defense-online/gameplay.png",
+    thumbnail: "/projects/invaders-tower-defense-online/official-cover.png",
   },
   {
     id: "eh6fCOBHs3A",
@@ -36,7 +36,7 @@ export const showcaseVideos: ShowcaseVideo[] = [
     title: "Bright Shooter",
     genre: "Bullet-Hell Shooter",
     description:
-      "High-density object pooling, projectile trajectories, collision optimization, and 60fps performance profiling.",
+      "High-density object pooling, projectile trajectories, collision optimization, and performance profiling.",
     thumbnail: "/projects/bright-shooter/gameplay.png",
   },
   {
@@ -68,7 +68,7 @@ export const showcaseVideos: ShowcaseVideo[] = [
     title: "Espírito de Luta",
     genre: "2.5D Fighting Game",
     description:
-      "Combat state machine (FSM), frame-accurate hitbox/hurtbox collision, input buffering, and animation events.",
+      "Combat state machine (FSM), hitbox/hurtbox collision, input buffering, and animation events.",
     thumbnail: "/projects/espirito-de-luta/cover.jpg",
   },
 ];
@@ -79,9 +79,9 @@ export const videoReel = {
   playlistUrl:
     "https://www.youtube.com/watch?v=CF1YK3jZGMM&list=PL5I0bzOsVT6oh1QUn0hjUjYkiN1GL0pvP&index=7",
   description:
-    "Direct video proof demonstrating gameplay mechanics, combat systems, netcode synchronization, and performance across published and prototype games.",
+    "Watch gameplay from released titles and prototypes, then explore the case studies for my contribution to each project.",
   points: [
-    "Combat state machines & frame-accurate hitboxes",
+    "Combat state machines & hitbox systems",
     "Server-authoritative multiplayer & netcode",
     "Object pooling & high-density projectile performance",
   ],

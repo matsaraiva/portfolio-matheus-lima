@@ -5,13 +5,13 @@ import { SectionHeader } from "@/components/SectionHeader";
 
 export function ContactSection() {
   return (
-    <section className="bg-neutral-950 px-4 py-20 text-white sm:px-6 lg:px-8" id="contact">
+    <section className="section-shell border-t border-neutral-200 bg-neutral-50 dark:border-white/10 dark:bg-neutral-950" id="contact">
       <div className="mx-auto max-w-7xl">
         <SectionHeader
           align="center"
-          description="Available for full-time game studio roles, indie contracts, and freelance gameplay/multiplayer engineering on Upwork."
+          description="Get in touch about Unity gameplay, multiplayer, or service-integration work."
           eyebrow="Contact &amp; Hire"
-          title="Let's Build Great Games Together"
+          title="Let’s build your next game system."
         />
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -25,14 +25,14 @@ export function ContactSection() {
           <ButtonLink
             href={profile.contact.linkedin}
             icon={<UserRound aria-hidden size={18} />}
-            variant="secondary"
+            variant="ghost"
           >
             LinkedIn
           </ButtonLink>
           <ButtonLink
             href={profile.contact.github}
             icon={<FolderGit2 aria-hidden size={18} />}
-            variant="secondary"
+            variant="ghost"
           >
             GitHub
           </ButtonLink>
@@ -45,7 +45,7 @@ export function ContactSection() {
             <ButtonLink
               href={profile.contact.email}
               icon={<Mail aria-hidden size={18} />}
-              variant="secondary"
+              variant="ghost"
             >
               Email
             </ButtonLink>

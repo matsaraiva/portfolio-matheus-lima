@@ -42,6 +42,17 @@ All portfolio data is intentionally centralized:
 - `src/content/tools.ts` - grouped tools and Data2073 stack slots
 - `src/content/companies.ts` - company/client/partner slots, outcomes, workflow
 - `src/content/videos.ts` - portfolio video playlist and video-section copy
+- `src/content/engineering.ts` - flagship ordering and project-backed system stories
+
+The homepage leads with three flagship entries; every other project remains in
+More Projects and retains its existing URL. The old work-map, technical-proof,
+and tools anchors now lead to the unified engineering showcase.
+
+Run `node scripts/optimize-images.mjs` after changing source artwork. It preserves
+originals and refreshes WebP display copies plus `src/content/optimized-images.json`.
+Run `node scripts/check-export.mjs /portfolio-matheus-lima` after a production
+build with that base path to verify local page, image, script, and anchor targets.
+Outstanding content evidence is tracked in `docs/claim-review.md`.
 
 Representative visuals are marked as placeholders in these files. Replace them only with approved screenshots, videos, logos, metrics, and client details Matheus is comfortable publishing.
 

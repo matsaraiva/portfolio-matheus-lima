@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ImageIcon, Video } from "lucide-react";
 import type { MediaAsset } from "@/content/types";
 import { getExternalVideoEmbed, isExternalUrl, withBasePath } from "@/lib/media";
+import { DeferredVideo } from "./DeferredVideo";
 
 type MediaGalleryProps = {
   title?: string;
@@ -22,7 +23,7 @@ export function MediaGallery({ title = "Media gallery", images, videos }: MediaG
           {title}
         </h2>
         <span className="rounded-md border border-neutral-300 px-3 py-1 text-xs font-semibold uppercase text-neutral-600 dark:border-white/15 dark:text-neutral-400">
-          {media.length} slots
+          {media.length} media
         </span>
       </div>
 
@@ -45,7 +46,7 @@ export function MediaGallery({ title = "Media gallery", images, videos }: MediaG
                     src={withBasePath(item.src)}
                   />
                 ) : item.type === "video" && item.src ? (
-                  <VideoFrame item={item} />
+                  <VideoFrame item={item} poster={images[0]?.src} />
                 ) : (
                   <div className="flex h-full flex-col items-center justify-center gap-3 text-neutral-500 dark:text-neutral-400">
                     <Video aria-hidden size={28} />
@@ -71,10 +72,16 @@ export function MediaGallery({ title = "Media gallery", images, videos }: MediaG
   );
 }
 
-function VideoFrame({ item }: { item: MediaAsset }) {
+function VideoFrame({ item, poster }: { item: MediaAsset; poster?: string }) {
   if (isExternalUrl(item.src)) {
+    const embed = getExternalVideoEmbed(item.src);
+    const youtubeId = embed.match(/youtube\.com\/embed\/([^?]+)/)?.[1];
+    if (youtubeId && youtubeId !== "videoseries" && poster) {
+      return <DeferredVideo id={youtubeId} title={item.alt} poster={poster} />;
+    }
     return (
       <iframe
+        loading="lazy"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         className="h-full w-full"
