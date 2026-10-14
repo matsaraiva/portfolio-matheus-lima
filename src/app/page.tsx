@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection, MoreProjectsSection } from "@/components/sections/ProjectsSection";
 import { VideoReelSection } from "@/components/sections/VideoReelSection";
 import { SiteHeader } from "@/components/SiteHeader";
+import { WebGamesSection } from "@/components/sections/WebGamesSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main id="main-content">
         <HeroSection />
         <ProjectsSection />
+        <WebGamesSection />
         <EngineeringSection />
         <MoreProjectsSection />
         <VideoReelSection />

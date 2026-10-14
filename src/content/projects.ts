@@ -1,5 +1,6 @@
 import type { Project } from "./types";
 import { videoReel } from "./videos";
+import { webGames } from "./web-games";
 
 export const projects: Project[] = [
   {
@@ -607,6 +608,7 @@ export const projects: Project[] = [
     category: "Gameplay Prototype",
     featured: false,
   },
+  ...webGames,
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);

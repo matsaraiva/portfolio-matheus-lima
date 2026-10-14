@@ -53,8 +53,8 @@ export const profile = {
 
 export const navigation = [
   { label: "Selected Work", href: "#projects" },
+  { label: "Playable Games", href: "#web-games" },
   { label: "Engineering", href: "#engineering" },
-  { label: "More Projects", href: "#more-projects" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];

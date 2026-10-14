@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { projects } from "@/content/projects";
 import { flagshipSlugs } from "@/content/engineering";
+import { webGameLinks } from "@/content/web-games";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SectionHeader } from "@/components/SectionHeader";
 import { withBasePath } from "@/lib/media";
@@ -50,7 +51,7 @@ export function ProjectsSection() {
 }
 
 export function MoreProjectsSection() {
-  const remaining = projects.filter((project) => !flagshipSlugs.includes(project.slug));
+  const remaining = projects.filter((project) => !flagshipSlugs.includes(project.slug) && !webGameLinks[project.slug]);
   return (
     <section className="section-shell bg-white dark:bg-neutral-950" id="more-projects">
       <div className="mx-auto max-w-7xl">

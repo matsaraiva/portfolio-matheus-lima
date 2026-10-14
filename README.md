@@ -2,6 +2,18 @@
 
 A static-export-friendly Next.js portfolio for Matheus Saraiva Lima, centered on Data2073 and built for project case studies with images, videos, tools, companies, and outcomes.
 
+[Explore the portfolio](https://matsaraiva.github.io/portfolio-matheus-lima/)
+
+## Playable Web Games
+
+Three independent portfolio projects complement the professional Unity work. Each includes a public demo, source, and documented verification. Implementation and verification were AI-assisted; the individual repositories describe scope and testing limitations.
+
+| Game | Stack and technical focus | Play | Code |
+| --- | --- | --- | --- |
+| Sunspire | Three.js · 3D stacking, overlap geometry, resource lifecycle | [Play](https://matsaraiva.github.io/sunspire-threejs/) | [Source](https://github.com/matsaraiva/sunspire-threejs) |
+| Beacon Shift | Phaser · timed survival, beam targeting, input handling | [Play](https://matsaraiva.github.io/beacon-shift-phaser/) | [Source](https://github.com/matsaraiva/beacon-shift-phaser) |
+| Circuit Bloom | PixiJS · puzzle state, procedural drawing, keyboard interaction | [Play](https://matsaraiva.github.io/circuit-bloom-pixijs/) | [Source](https://github.com/matsaraiva/circuit-bloom-pixijs) |
+
 ## Stack
 
 - Next.js 16 with App Router
@@ -32,6 +44,8 @@ npm run build
 ```
 
 `npm run build` creates the static export in `out/`.
+It also normalizes nested Next.js navigation files emitted on Windows to the
+flat filenames requested by the browser. Already-flat exports are unchanged.
 
 ## Edit Personal Content
 
@@ -43,9 +57,11 @@ All portfolio data is intentionally centralized:
 - `src/content/companies.ts` - company/client/partner slots, outcomes, workflow
 - `src/content/videos.ts` - portfolio video playlist and video-section copy
 - `src/content/engineering.ts` - flagship ordering and project-backed system stories
+- `src/content/web-games.ts` - playable web game case studies and demo/source destinations
 
-The homepage leads with three flagship entries; every other project remains in
-More Projects and retains its existing URL. The old work-map, technical-proof,
+The homepage leads with three flagship entries, followed by a dedicated Playable
+Web Games section. Other projects remain in More Projects and retain their existing
+URLs. The old work-map, technical-proof,
 and tools anchors now lead to the unified engineering showcase.
 
 Run `node scripts/optimize-images.mjs` after changing source artwork. It preserves

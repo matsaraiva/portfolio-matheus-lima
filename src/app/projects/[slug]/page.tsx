@@ -19,6 +19,8 @@ import { getProjectBySlug, projects } from "@/content/projects";
 import type { ProjectCaseStudy } from "@/content/types";
 import { seo } from "@/content/profile";
 import { projectSystems } from "@/content/project-systems";
+import { webGameLinks } from "@/content/web-games";
+import { WebGameActions } from "@/components/WebGameActions";
 
 export const dynamicParams = false;
 
@@ -74,7 +76,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <article className="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
           <Link
             className="inline-flex items-center gap-2 text-sm font-semibold text-neutral-700 transition hover:text-neutral-950 dark:text-neutral-300 dark:hover:text-white"
-            href="/#projects"
+            href={webGameLinks[project.slug] ? "/#web-games" : "/#projects"}
           >
             <ArrowLeft aria-hidden size={16} />
             Back to projects
@@ -91,6 +93,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <p className="mt-6 max-w-3xl text-lg leading-8 text-neutral-700 dark:text-neutral-300">
                 {project.summary}
               </p>
+              {webGameLinks[project.slug] ? <div className="mt-6"><WebGameActions slug={project.slug} title={project.title} /></div> : null}
             </div>
 
             <aside className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">

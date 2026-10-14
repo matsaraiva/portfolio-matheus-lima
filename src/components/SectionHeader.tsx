@@ -1,4 +1,5 @@
 type SectionHeaderProps = {
+  id?: string;
   eyebrow: string;
   title: string;
   description?: string;
@@ -6,6 +7,7 @@ type SectionHeaderProps = {
 };
 
 export function SectionHeader({
+  id,
   eyebrow,
   title,
   description,
@@ -18,7 +20,7 @@ export function SectionHeader({
       <p className="mb-3 text-xs font-bold uppercase text-emerald-600 dark:text-emerald-300">
         {eyebrow}
       </p>
-      <h2 className="text-balance text-3xl font-semibold text-neutral-950 dark:text-white sm:text-4xl">
+      <h2 id={id} className="text-balance text-3xl font-semibold text-neutral-950 dark:text-white sm:text-4xl">
         {title}
       </h2>
       {description ? (
